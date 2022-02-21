@@ -1,5 +1,24 @@
 # Industrial communication systems
 
+## Projects
+### Modbus TCP master python program
+The software is a Modbus TCP master that communicates with Modbus slave with requests. It a command promt tool for making Modbus TCP connections. 
+It can be used with following command using command prompt. 
+```
+python modbusTCPmaster.py
+```
+The software will ask user information of the Modbus slave and the supported Function codes are:
++ 1 Read Coil Status
++ 2 Read Input Status
++ 3 Read Holding Registers
++ 4 Read Input Registers
++ 5 Force Single Coil
++ 6 Force Single Register
++ 15 Force Multiple Coils
+
+
+
+## Course brochure
 Core learning objectives:
 + Communications, data and the Internet
 + Protocol architecture
