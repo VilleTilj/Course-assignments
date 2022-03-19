@@ -176,13 +176,13 @@ class TCP_socket():
                
                # Add zero padding to data that we want to show to show it correctly
                 if len(coils_data) != self.register:
-                    zeros_to_add = self.register - len(coils_data)
+                    zeros_to_add = int(self.register) - len(coils_data)
                     zeros = ''
                     zeros = zeros.zfill(zeros_to_add)
                     coils_data += zeros
 
                 # Show the Bit values that slave has.
-                for i in range(self.register):
+                for i in range(int(self.register)):
                     print('Bit', i, ':', coils_data[i])
 
             elif self.response[7] in [3, 4]:
@@ -227,13 +227,16 @@ class TCP_socket():
         self.function_code = int(f_code) if f_code.isnumeric() else 1
 
 
-        if int(self.function_code) ==5:
+        if int(self.function_code) == 5:
             value = input('Enter coil write value (1/0): ')
             self.write_value = 255 if int(value) == 1 else 0
+            self.plc_address = self.tcp_ip
+
 
         elif int(self.function_code) == 6:
             value = input('Enter register write value: ')
             self.write_value = value if value.isnumeric() else 0
+            self.plc_address = self.tcp_ip
 
         elif int(self.function_code) == 15:
             plc_address = input('Enter starting pcl address: ')
