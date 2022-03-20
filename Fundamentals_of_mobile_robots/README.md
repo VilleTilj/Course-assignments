@@ -22,5 +22,5 @@ Core learning objectives:
 + Sensor technologies (LiDAR, Radar, Sonar, Leddar, IMU, GNSS, UWB), sensor models (LiDAR, Sonar, IMU) and their uncertainty
 + Motion control: path smoothing, path following and trajectory tracking
 
-## Folders
-The folders in the repo are different excercises on the course. 
+## Projects
+The project are in folders in the repo and are different excercises on the course. All of the projects have been made in pairs with Teemu Mökkönen. Some of the projects have been given to us as templates and some are made from scratch. More detailed information of this is mentioned in project folder README files. 
