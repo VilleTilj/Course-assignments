@@ -7,7 +7,7 @@ from detect_obstacle import detect_obstacle_e5t2
 Ts = 0.01 # Update simulation every 10ms
 t_max = np.pi # total simulation duration in seconds
 # Set initial state
-init_state = np.array([-2., 1., 0.]) # px, py, theta
+init_state = np.array([-2., -.5, 0.]) # px, py, theta
 IS_SHOWING_2DVISUALIZATION = True
 
 # Define Field size for plotting (should be in tuple)
@@ -51,9 +51,12 @@ def simulate_control():
         sim_visualizer.set_field( field_x, field_y ) # set plot area
         sim_visualizer.show_goal(desired_state)
         # ADD OBJECT TO PLOT
-        obst_vertices = np.array( [ [-1., -1.5], [1., -1.5], [1., 1.5], [-1., 1.5], \
-                [-1., 1.], [0.5, 1.], [0.5, -1.], [-1., -1.], [-1., -1.5] ]) 
-        sim_visualizer.ax.plot( obst_vertices[:,0], obst_vertices[:,1], '--r' )
+        d_safe = 0.5
+        eps = 0.2
+        sim_visualizer.ax.add_patch( plt.Circle( (0,0), 0.5, color="red"))
+        sim_visualizer.ax.add_patch( plt.Circle( (0,0), d_safe, color="red",  fill=False))
+        sim_visualizer.ax.add_patch( plt.Circle( (0,0), d_safe + eps, color="green",fill=False))
+ 
 
         # get sensor reading
         sensors_dist = detect_obstacle_e5t2( robot_state[0], robot_state[1], robot_state[2]) 
