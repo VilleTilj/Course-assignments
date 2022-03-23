@@ -57,11 +57,11 @@ def simulate_control():
         # TODO: change the implementation to switching
         #------------------------------------------------------------
         if np.linalg.norm(robot_state - obstacle_center_point) < d_safe:
-            k = calculate_time_varying_k(desired_state, robot_state, v0=7, beta=0.5)
+            k = calculate_time_varying_k(desired_state, robot_state, v0=8, beta=0.5)
             current_input = k * (robot_state - obstacle_center_point)
         
         elif np.linalg.norm(robot_state - obstacle_center_point) >= d_safe + eps:
-            k = calculate_time_varying_k(desired_state, robot_state, v0=10, beta=0.5)
+            k = calculate_time_varying_k(desired_state, robot_state, v0=12, beta=0.5)
             current_input = k * (desired_state - robot_state)
             
         # record the computed input at time-step t
@@ -107,7 +107,7 @@ if __name__ == '__main__':
     ax.plot(t, input_history[:,2], label='omega [rad/s]')
     ax.set(xlabel="t [s]", ylabel="control input")
     plt.legend()
-    plt.grid()
+    # plt.grid()
 
     # Plot historical data of state
     fig3 = plt.figure(3)
