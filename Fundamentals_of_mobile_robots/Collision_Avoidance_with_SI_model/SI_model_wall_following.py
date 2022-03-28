@@ -62,10 +62,8 @@ def simulate_control():
     current_input = np.array([0., 0., 0.]) # initial numpy array for [vx, vy, omega]
     x_ts = np.array([np.inf, np.inf, np.inf])
 
-    # Init logging information
-    transition_state = INIT
-    route_chosen = False
-    last_input_mode = INIT
+    # Init state
+    state = INIT
 
     # Store the value that needed for plotting: total step number x data length
     state_history = np.zeros( (sim_iter, len(robot_state)) ) 
@@ -111,86 +109,34 @@ def simulate_control():
 
         # Calculate control inputs 
         k = calculate_time_varying_k(desired_state, robot_state, v0=5, beta=0.5)
-        current_input = k * (desired_state - robot_state)
         u_gtg = k*(desired_state - robot_state)
-        u_avo = k*(robot_state - x_0)  
-
-        # Wall following direction input controls
+        u_avo = k*(robot_state - x_0)
         u_wf_c = k * np.array([[0, 1, 0], [-1, 0, 0], [0, 0, 1]]) @ u_avo
         u_wf_cc = k * np.array([[0, -1, 0], [1, 0, 0], [0, 0, 1]]) @ u_avo
- 
-        # Calculate angles for the robot and use them to chose correct input control
-        alpha_c = np.arccos((np.transpose(u_gtg) @ u_wf_c)/(np.linalg.norm(u_gtg)*np.linalg.norm(u_wf_c)))
-        alpha_cc = np.arccos((np.transpose(u_gtg) @ u_wf_cc)/(np.linalg.norm(u_gtg)*np.linalg.norm(u_wf_cc)))
-        alpha__gtg = np.arccos((np.transpose(u_avo) @ u_gtg)/(np.linalg.norm(u_avo)*np.linalg.norm(u_gtg)))
-
-        if alpha_c < np.pi/2 and not route_chosen:
-            route = MOVE_WALL_C
-            route_chosen = True
-
-        elif alpha_cc < np.pi/2 and not route_chosen:
-            route = MOVE_WALL_CC
-            route_chosen = True
 
         
         # if there is a reading from the sensor
-        if sensors_dist[min_id] < 1:
-
-            # Check state conditions it robot should use avoid obstacle control input
-            if np.linalg.norm(robot_state - x_0) < d_safe - eps and transition_state != GTG:
-                current_input = u_avo
-                if transition_state != AVOID:
-                    print(AVOID + ": sensor" + str(min_id))
-                    transition_state = AVOID
-                    last_input_mode = AVOID
-
-            # Statement for wall following control input 
-            elif d_safe - eps <= np.linalg.norm(robot_state - x_0) <= d_safe + eps:
-
-                # Choose the correct wall following control input that calculated from the robot angle
-                if route == MOVE_WALL_C:
-                    current_input = u_wf_c
-                    if transition_state != MOVE_WALL_C:
-                        x_ts = robot_state
-                        transition_state = MOVE_WALL_C
-                        print(MOVE_WALL_C)
-                        last_input_mode = MOVE_WALL_C
-                    
-
-                elif route == MOVE_WALL_CC:
-                    current_input = u_wf_cc
-                    if transition_state != MOVE_WALL_CC:
-                        x_ts = robot_state
-                        transition_state = MOVE_WALL_CC
-                        print(MOVE_WALL_CC)
-                        last_input_mode = MOVE_WALL_CC
-
-            # Statement to check if there are no obstacles to control robot directrly towards goal.
-            elif np.linalg.norm(robot_state - desired_state) < np.linalg.norm(x_ts - desired_state) and alpha__gtg < np.pi/2 :
-                current_input = u_gtg
-                if transition_state != GTG:
-                    print(GTG)
-                    transition_state = GTG
-                    last_input_mode = GTG
+        if sensors_dist[min_id] < 0.99:
+            state, x_ts = state_machine(state, robot_state, desired_state, x_ts,u_gtg, u_avo, u_wf_c, u_wf_cc, x_0)
             
-            # If any of the states fail to trigger
-            # Follow latest state configuration
-            else:
-                if last_input_mode == AVOID:
-                    current_input = u_avo
-                elif last_input_mode == GTG:
-                    current_input = u_gtg
-                elif last_input_mode == MOVE_WALL_C:
-                    current_input = u_wf_c
-                elif last_input_mode == MOVE_WALL_CC:
-                    current_input = u_wf_cc
-                
-            # record the computed input at time-step t
-            input_history[it] = current_input
+            # Follow lates state rules   
+            if state == AVOID:
+                current_input = u_avo
+            elif state == GTG:
+                current_input = u_gtg
+            elif state == MOVE_WALL_C:
+                current_input = u_wf_c
+            elif state == MOVE_WALL_CC:
+                current_input = u_wf_cc
 
         else:
             current_input = u_gtg
-            print(NO_READING)
+            if state != NO_READING:
+                state = NO_READING
+                print(NO_READING)
+
+        # record the computed input at time-step t
+        input_history[it] = current_input
 
         if IS_SHOWING_2DVISUALIZATION: # Update Plot
             sim_visualizer.update_time_stamp( it*Ts )
@@ -213,6 +159,35 @@ def simulate_control():
     # ---------------------------
     # return the stored value for additional plotting or comparison of parameters
     return state_history, goal_history, input_history
+
+
+def state_machine(current_state, robot_state, desired_state, x_ts ,u_gtg, u_avo, u_wf_c, u_wf_cc, x0):
+    eps = 0.2
+    d_safe = 0.2
+    
+    if d_safe - eps < np.linalg.norm(robot_state - x0) < d_safe + eps and np.transpose(u_gtg) @ u_wf_c > 0:
+        if current_state != MOVE_WALL_C and current_state != MOVE_WALL_CC: # 
+            current_state = MOVE_WALL_C
+            x_ts = robot_state
+            print(MOVE_WALL_C)
+
+    elif d_safe - eps < np.linalg.norm(robot_state - x0) < d_safe + eps and np.transpose(u_gtg) @ u_wf_cc > 0:
+        if current_state != MOVE_WALL_CC  and current_state != MOVE_WALL_C:
+            print(MOVE_WALL_CC)
+            x_ts = robot_state
+            current_state = MOVE_WALL_CC
+
+    elif np.linalg.norm(robot_state - x0) < d_safe - eps:
+        if current_state != AVOID and current_state != GTG:
+            current_state = AVOID
+            print(AVOID)
+
+    elif np.linalg.norm(robot_state - desired_state) < np.linalg.norm(robot_state - x_ts) and np.transpose(u_avo) @ u_gtg > 0:
+        if current_state != GTG and current_state != AVOID:
+            print(GTG)
+            current_state = GTG
+
+    return current_state, x_ts
 
 
 def calculate_time_varying_k(desired_state, robot_state, v0, beta):
