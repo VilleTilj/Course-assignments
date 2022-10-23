@@ -1,0 +1,9 @@
+# ignore build files
+**/__pycache__/*
+**/*.pyc
+
+# ignore IntelliJ files
+**/.idea/*
+
+# ignore Visual Studio Code files
+**/.vscode/*
