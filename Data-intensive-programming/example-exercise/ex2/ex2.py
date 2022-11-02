@@ -2,10 +2,11 @@
 
 from typing import List
 
-from pyspark.sql import functions
+from pyspark.sql import functions, Window
 from pyspark.sql import DataFrame
 from pyspark.sql import Row
 from pyspark.sql import SparkSession
+from pyspark.sql.types import IntegerType, FloatType
 
 
 def main():
@@ -27,26 +28,28 @@ def main():
     # Task 1: File "data/rdu-weather-history.csv" contains weather data in csv format.
     #         Study the file and read the data into DataFrame weatherDataFrame.
     #         Let Spark infer the schema. Study the schema.
-    weatherDataFrame: DataFrame = __undefined__
+    weatherDataFrame: DataFrame = spark.read.csv("data/rdu-weather-history.csv", inferSchema=True, header=True)
 
     # Study the schema of the DataFrame:
     weatherDataFrame.printSchema()
 
 
 
-    printTaskLine(1)
+    printTaskLine(2)
     # Task 2: print three first elements of the data frame to stdout
-    weatherSample: List[Row] = __undefined__
+    weatherSample: List[Row] = weatherDataFrame.head(3)
     print(*weatherSample, sep="\n")  # prints each Row to its own line
+    print()
 
 
 
     printTaskLine(3)
     # Task 3: Find min and max temperatures from the whole DataFrame
-    minTemp: float = __undefined__
-    maxTemp: float = __undefined__
+    minTemp: float = weatherDataFrame.withColumn("temperaturemin", weatherDataFrame["temperaturemin"].cast(FloatType())).agg({"temperaturemin": 'min'}).collect()[0]["min(temperaturemin)"]
+    maxTemp: float = weatherDataFrame.withColumn("temperaturemax", weatherDataFrame["temperaturemax"].cast(FloatType())).agg({"temperaturemax": 'max'}).collect()[0]["max(temperaturemax)"]
 
     print(f"Min temperature is {minTemp}")
+
     print(f"Max temperature is {maxTemp}")
 
 
@@ -56,17 +59,21 @@ def main():
     # The type of the column is integer and value is calculated from column "date".
     # You can use function year from pyspark.sql.functions
     # See documentation: "def year" from https://spark.apache.org/docs/3.3.0/api/scala/org/apache/spark/sql/functions$.html
-    weatherDataFrameWithYear: DataFrame = __undefined__
+    weatherDataFrameWithYear: DataFrame = weatherDataFrame.withColumn("year", functions.year(functions.col("date")))
     weatherDataFrameWithYear.printSchema()
+    weatherDataFrameWithYear.show(5, truncate=False)
 
 
 
     printTaskLine(5)
     # Task 5: Find min and max temperature for each year
-    aggregatedDF: DataFrame = __undefined__
+    aggregatedDF: DataFrame = weatherDataFrameWithYear.groupby("year").agg(functions.min("temperaturemin"),
+                                                                           functions.max("temperaturemax"))
+
 
     aggregatedDF.printSchema()
     print(*(aggregatedDF.collect()), sep="\n")
+    print()
 
 
 
@@ -75,7 +82,11 @@ def main():
     #         In addition to the min and max temperature for each year find out also the following:
     #         - count for how many records there are for each year
     #         - the average wind speed for each year (rounded to 2 decimal precision)
-    task6DF: DataFrame = __undefined__
+
+    task6DF: DataFrame = weatherDataFrameWithYear.groupby('year').agg(functions.min("temperaturemin"),
+                                                                      functions.max("temperaturemax"),
+                                                                      functions.count('year'),
+                                                                      functions.round(functions.avg('avgwindspeed'),2))
 
     task6DF.show()
 
