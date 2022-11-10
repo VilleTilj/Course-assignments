@@ -25,7 +25,7 @@ def check_zone_change(data):
         orchestrator.change_ws_state("Z3")
         if orchestrator.workstation.zone_states["Z3"]:
             orchestrator.robot_draw(data["payload"]["PalletID"])
-    elif data["id"] == "DrawStartExecution":
+    elif data["id"] == "DrawEndExecution":
             orchestrator.move_pallet("Z3", data["payload"]["PalletID"])
     elif data["id"] == "Z4_Changed":
         orchestrator.change_ws_state("Z4")

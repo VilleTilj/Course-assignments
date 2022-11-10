@@ -48,12 +48,18 @@ class Orchestrator:
                 self.workstation.trans_zone23()
         
         elif from_zone == "Z3":
-            pass
+            if not self.workstation.zone_states["Z5"] and not self.workstation.zone_states["Z4"] :
+                self.workstation.trans_zone35()
+                    # TODO add hold if the zone 4 and 5 is busy..
+
+        elif from_zone == "Z4":
+            if not self.workstation.zone_states["Z5"]:
+                self.workstation.trans_zone45()
 
 
     def robot_draw(self, pallet_id):
         self.workstation.draw()
-        self.pallets[pallet_id] = True
+        self.pallets[pallet_id].assembled = True
 
 
 
