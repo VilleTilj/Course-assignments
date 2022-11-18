@@ -1,5 +1,8 @@
 import requests
 
+'''
+Inheritable class. Contains only conveyor API calls.
+'''
 class Conveyor: 
     def __init__(self, conveyor_api):
         self.conveyor_api = conveyor_api
@@ -55,7 +58,9 @@ class Conveyor:
             print(r.status_code)
 
 
-
+'''
+Inheritable class. Contains only robot API calls.
+'''
 class Robot():
     def __init__(self, robot_api) -> None:
         self.robot_api = robot_api
@@ -67,7 +72,9 @@ class Robot():
 
 
 
-
+'''
+Workstation class that contains conveyor and robot API calls and the zone states.
+'''
 class Workstation(Conveyor, Robot):
     #Class constructor
     def __init__(self, wsID):
