@@ -9,58 +9,56 @@ class Conveyor:
     def trans_zone12(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/TransZone12", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code)
+        print(f'Transzone12 {r.status_code}')
 
     def trans_zone23(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/TransZone23", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code)
+        print(f'Transzone23 {r.status_code}')
 
     def trans_zone35(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/TransZone35", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code)
+        print(f'Transzone35 {r.status_code}')
 
     def trans_zone14(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/TransZone14", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code)
+        print(f'Transzone14 {r.status_code}')
 
     def trans_zone45(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/TransZone45", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code)
+        print(f'Transzone45 {r.status_code}')
 
     def zone1status(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/Z1", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code, r.text["PalletID"])
+        print('Zone 1 status', r.status_code, r.text["PalletID"])
         return r.content["PalletID"]
 
     def zone2status(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/Z2", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code, r.text["PalletID"])
+        print('Zone 2 status',r.status_code, r.text["PalletID"])
         return r.content["PalletID"]
 
     def zone3status(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/Z3", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code, r.text["PalletID"])
+        print('Zone 3 status',r.status_code, r.text["PalletID"])
         return r.content["PalletID"]
 
     def zone4status(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/Z4", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code)
-        print(r.status_code, r.text["PalletID"])
+        print('Zone 4 status',r.status_code, r.text["PalletID"])
         return r.content["PalletID"]
 
     def zone5status(self):
         transition: tuple = (f"{self.conveyor_api}/rest/services/Z5", '{"destUrl" : ""}')
         r = requests.post(transition[0], data=transition[1])
-        print(r.status_code)
-        print(r.status_code, r.text["PalletID"])
+        print('Zone 5 status',r.status_code, r.text["PalletID"])
         return r.content["PalletID"]
 
 
@@ -74,7 +72,7 @@ class Robot():
     def draw(self):
         draw: tuple = (f"{self.robot_api}/rest/services/Draw3", '{"destUrl" : ""}')
         r = requests.post(draw[0], data=draw[1])
-        print(r.status_code)
+        print('Draw 3', r.status_code)
 
 
 

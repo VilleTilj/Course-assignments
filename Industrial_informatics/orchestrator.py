@@ -1,5 +1,6 @@
 import requests
 from workstation import Workstation
+import logging
 
 #palletID: alphanumeric
 class Pallet:
@@ -12,6 +13,7 @@ Class to subscribe to RTU events and operate workstation, in other words move th
 '''
 class Orchestrator:
     def __init__(self) -> None:
+        logging.basicConfig(level=logging.INFO)
         self.id = str(4)
         self.workstation = Workstation(self.id)
         self.pallets: dict[str:Pallet] = {}
@@ -19,6 +21,7 @@ class Orchestrator:
 
     def add_pallet(self, pallet_id):
         self.pallets[pallet_id] = Pallet(palletID=pallet_id)
+        logging.info("New pallet added to the workstation.")
 
     def __subscribe_to_events(self):
         r1 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z1_Changed/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
@@ -28,7 +31,7 @@ class Orchestrator:
         r5 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z5_Changed/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
         r6 = requests.post(f'http://192.168.{self.id}.1/rest/events/DrawEndExecution/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
 
-        print(f"Zone 1 request: {r1.status_code}\nZone 2 request: {r2.status_code}\nZone 3 request: {r3.status_code}\nZone 4 request: {r4.status_code} \nZone 5 request: {r5.status_code}\nDraw end execution request: {r6.status_code}")
+        logging.info(f"Zone 1 request: {r1.status_code}\nZone 2 request: {r2.status_code}\nZone 3 request: {r3.status_code}\nZone 4 request: {r4.status_code} \nZone 5 request: {r5.status_code}\nDraw end execution request: {r6.status_code}")
 
 
     # Keep track about the workstation zone states.
@@ -36,7 +39,7 @@ class Orchestrator:
         self.workstation.zone_states[zone_id] = not self.workstation.zone_states[zone_id]
         if new_pallet:
             self.add_pallet(pallet_id)
-
+            
 
     ''' Logic to move the pllet through workstations.
         @param from_zone: zone location where pallet is moving further.
