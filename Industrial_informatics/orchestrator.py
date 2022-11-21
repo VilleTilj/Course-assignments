@@ -12,30 +12,30 @@ Class to subscribe to RTU events and operate workstation, in other words move th
 '''
 class Orchestrator:
     def __init__(self) -> None:
-        self.id = str(2)
+        self.id = str(4)
         self.workstation = Workstation(self.id)
-        self.pallets: list[Pallet] = []
+        self.pallets: dict[str:Pallet] = {}
         self.__subscribe_to_events()
 
-    def add_pallet(self):
-        self.pallets.append(Pallet(len(self.pallets+1)))
+    def add_pallet(self, pallet_id):
+        self.pallets[pallet_id] = Pallet(palletID=pallet_id)
 
     def __subscribe_to_events(self):
-        r1 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z1_Changed/notifs', data='{"destUrl" : "http://192.168.0.0.1:8080"}')
-        r2 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z2_Changed/notifs', data='{"destUrl" : "http://192.168.0.0.1:8080"}')
-        r3 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z3_Changed/notifs', data='{"destUrl" : "http://192.168.0.0.1:8080"}')
-        r4 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z4_Changed/notifs', data='{"destUrl" : "http://192.168.0.0.1:8080"}')
-        r5 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z5_Changed/notifs', data='{"destUrl" : "http://192.168.0.0.1:8080"}')
-        r6 = requests.post(f'http://192.168.{self.id}.1/rest/events/DrawEndExecution/notifs', data='{"destUrl" : "http://192.168.0.0.1:8080"}')
+        r1 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z1_Changed/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
+        r2 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z2_Changed/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
+        r3 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z3_Changed/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
+        r4 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z4_Changed/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
+        r5 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z5_Changed/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
+        r6 = requests.post(f'http://192.168.{self.id}.1/rest/events/DrawEndExecution/notifs', data='{"destUrl" : "http://192.168.0.40:8080/events"}')
 
-        print(f"Zone 1 request: {r1.status_code}\nZone 2 request: {r2.status_code}\nZone 3 request: {r3.status_code}\nZone 4 request: {r4.status_code} \nZone 5 request: {r5.status_code}")
+        print(f"Zone 1 request: {r1.status_code}\nZone 2 request: {r2.status_code}\nZone 3 request: {r3.status_code}\nZone 4 request: {r4.status_code} \nZone 5 request: {r5.status_code}\nDraw end execution request: {r6.status_code}")
 
 
     # Keep track about the workstation zone states.
-    def change_ws_state(self, zone_id:str) -> None:
+    def change_ws_state(self, zone_id:str, pallet_id:str='-1', new_pallet:bool=False) -> None:
         self.workstation.zone_states[zone_id] = not self.workstation.zone_states[zone_id]
-        if self.workstation.zone_states["Z1"]:
-            self.add_pallet()
+        if new_pallet:
+            self.add_pallet(pallet_id)
 
 
     ''' Logic to move the pllet through workstations.
@@ -44,7 +44,7 @@ class Orchestrator:
     '''
     def move_pallet(self, from_zone: str, pallet_id: str) -> None:
         if from_zone == "Z1":
-            if self.pallets[pallet_id].assembled or self.workstation.zone_states["Z2"]:
+            if self.pallets.get(pallet_id).assembled or self.workstation.zone2status() != '-1':
                 self.workstation.trans_zone14()
                 self.change_ws_state("Z4")
             else:
@@ -53,29 +53,30 @@ class Orchestrator:
             self.change_ws_state("Z1")
 
         elif from_zone == "Z2":
-            if not self.workstation.zone_states["Z3"]:
+            if self.workstation.zone3status() == '-1':
                 self.workstation.trans_zone23()
                 self.change_ws_state("Z3")
                 self.change_ws_state("Z2")
 
         elif from_zone == "Z5":
                 # Collision avoidance
-                if not self.workstation.zone_states["Z5"] and self.workstation.zone_states["Z4"]:
+                if self.workstation.zone5status() == '-1' and self.workstation.zone4status() != '-1':
                     self.workstation.trans_zone45()
                     self.change_ws_state("Z4")
-                else:
+                    self.change_ws_state("Z5")
+                elif self.workstation.zone5status() == '-1' and self.workstation.zone3status() != '-1':
                     self.workstation.trans_zone35()
                     self.change_ws_state("Z3")
-                self.change_ws_state("Z5")
+                    self.change_ws_state("Z5")
         
         elif from_zone == "Z3":
-            if not self.workstation.zone_states["Z5"] and not self.workstation.zone_states["Z4"] :
+            if self.workstation.zone5status() == '-1':
                 self.workstation.trans_zone35()
                 self.change_ws_state("Z5")
                 self.change_ws_state("Z3")
 
         elif from_zone == "Z4":
-            if not self.workstation.zone_states["Z5"]:
+            if self.workstation.zone5status() == '-1':
                 self.workstation.trans_zone45()
                 self.change_ws_state("Z5")
                 self.change_ws_state("Z4")
