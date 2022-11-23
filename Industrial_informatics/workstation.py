@@ -74,6 +74,10 @@ class Robot():
         r = requests.post(draw[0], data=draw[1])
         print('Draw 3', r.status_code)
 
+    def calibrate(self):
+        draw: tuple = (f"{self.robot_api}/rest/services/Calibrate", '{"destUrl" : ""}')
+        r = requests.post(draw[0], data=draw[1])
+
 
 
 '''

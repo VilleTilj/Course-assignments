@@ -19,13 +19,14 @@ class Orchestrator:
         self.workstation = Workstation(self.id)
         self.pallets: dict[str:Pallet] = {}
         self.__subscribe_to_events()
+        self.workstation.calibrate()
+        logging.info("Calibrating robot..")
 
     def add_pallet(self, pallet_id):
         self.pallets[pallet_id] = Pallet(palletID=pallet_id)
         logging.info("New pallet added to the workstation.")
 
     def __subscribe_to_events(self):
-        # NOTE does not work with workstations with number higher than 9.
         r1 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z1_Changed/notifs', data='{"destUrl" : "http://192.168.0.'+self.id+'0:8080/events"}')
         r2 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z2_Changed/notifs', data='{"destUrl" : "http://192.168.0.'+self.id+'0:8080/events"}')
         r3 = requests.post(f'http://192.168.{self.id}.2/rest/events/Z3_Changed/notifs', data='{"destUrl" : "http://192.168.0.'+self.id+'0:8080/events"}')
@@ -39,7 +40,7 @@ class Orchestrator:
     # Keep track about the workstation zone states.
     def change_ws_state(self, zone_id:str, pallet_id:str='-1', new_pallet:bool=False) -> None:
         self.workstation.zone_states[zone_id] = not self.workstation.zone_states[zone_id]
-        if new_pallet:
+        if new_pallet and (not pallet_id in self.pallets.keys()):
             self.add_pallet(pallet_id)
             
 
@@ -94,17 +95,4 @@ class Orchestrator:
         self.workstation.draw()
         self.pallets[pallet_id].assembled = True
         logging.info("Pallet assembled")
-        '''if True:
-
-            if self.workstation.zone5status() == '-1' and self.workstation.zone4status() != '-1':
-                self.workstation.trans_zone45()
-                sleep(1)
-
-            elif self.workstation.zone5status() == '-1' and self.workstation.zone3status() != '-1':
-                self.workstation.trans_zone35()
-                sleep(1)
-            '''
-
-
-
-
+  
