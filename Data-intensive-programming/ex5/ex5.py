@@ -29,7 +29,7 @@ def main():
 
     printTaskLine(1)
     # Task #1: How do you get the first 10 lines as a list?
-    lines10: List[str] = __unknown__
+    lines10: List[str] = articlesRdd.take(10)
     print(*lines10, sep="\n")
 
 
@@ -38,10 +38,10 @@ def main():
     # Task #2: Compute how many lines there are in total in the articles.
     #          And then count the total number of words in the articles
     #          You can assume that words in each line are separated by the space character (i.e. " ")
-    nbrOfLines: int = __unknown__
+    nbrOfLines: int = articlesRdd.count()
     print(f"#lines = {nbrOfLines}")
 
-    words: int = __unknown__
+    words: int = len(articlesRdd.flatMap(lambda x: x.split()).collect())
     print(f"#words = {words}")
 
 
@@ -49,10 +49,10 @@ def main():
     printTaskLine(3)
     # Task #3: What is the count of non-white space characters? (it is enough to count the non " "-characters for this)
     #          And how many numerical characters are there in total? (i.e., 0, 1, 2, ..., 9 characters)
-    chars: int = __unknown__
+    chars: int = sum(articlesRdd.flatMap(lambda x: x.split(" ")).map(lambda x: len(x)).collect())
     print(f"#chars = {chars}")
 
-    numChars: int = __unknown__
+    numChars: int = len(articlesRdd.flatMap(lambda x: [c for c in x if c.isdigit()]).collect())
     print(f"#numChars = {numChars}")
 
 
@@ -60,11 +60,13 @@ def main():
     printTaskLine(4)
     # Task #4: How many 5-character words that are not "DisCo" are there in the corpus?
     #          And what is the most often appearing 5-character word (that is not "DisCo") and how many times does it appear?
-    words5Count: int = __unknown__
+    words5Count: int = len(articlesRdd.flatMap(lambda x: x.split()).filter(lambda x: x != "DisCo" and len(x) == 5).collect())
     print(f"5-character words = {words5Count}")
 
-    commonWord: str =__unknown__
-    commonWordCount: int = __unknown__
+    word_list = articlesRdd.flatMap(lambda x: x.split()).filter(lambda x: x != "DisCo" and len(x) == 5).collect()
+    commonWord: str = max(set(word_list), key=word_list.count)
+    print(commonWord)
+    commonWordCount: int = word_list.count(commonWord)
     print(f"The most common word is '{commonWord}' and it appears {commonWordCount} times")
 
 
@@ -93,10 +95,11 @@ def main():
     #          Get all the distinct prime factors from the RDD.
     values: List[int] = list(range(12, 18)) + list(range(123, 128)) + list(range(1234, 1238))
 
-    factorRdd: RDD[Tuple[int, List[int]]] = __unknown__
+    factorRdd: RDD[Tuple[int, List[int]]] = sc.parallelize(values).map(lambda x: (x, factorization(x)))
     print(*[f"{n}: {factors}" for n, factors in factorRdd.collect()], sep="\n")
 
-    distinctPrimes: List[int] = __unknown__
+    distinctPrimes: List[int] = list(set([item for sublist in factorRdd.values().collect() for item in sublist]))
+    distinctPrimes.sort()
     print(f"distinct primes: {distinctPrimes}")
 
 
@@ -111,6 +114,13 @@ def main():
 
     print(*(lyricsCount.collect()), sep="\n")
 
+    print('''
+    First, the snippet reads the lyrics data to RDD from text file.
+    Then the whole RDD is flattened to list of words. 
+    For example ["Sheena is a Punk rocker now"] => ["Sheena", "is", "a", "Punk", "rocker", "now"]
+    Then the list elements are converted to tuples with value (word, 1).
+    After that the occurrence of the words are counted with reduceByKey.
+    ''')
 
 
 # Helper function to separate the task outputs from each other
