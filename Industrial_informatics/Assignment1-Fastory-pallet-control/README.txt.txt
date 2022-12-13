@@ -1,0 +1,1 @@
+To run the software, run the server.py file.
