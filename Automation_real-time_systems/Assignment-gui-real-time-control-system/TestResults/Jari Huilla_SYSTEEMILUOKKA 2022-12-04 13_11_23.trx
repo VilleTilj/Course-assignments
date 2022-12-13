@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="062d2a9a-a6e8-464a-b732-203afac38463" name="Jari Huilla@SYSTEEMILUOKKA 2022-12-04 13:11:23" runUser="SYSTEEMILUOKKA\Jari Huilla" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="b7ec47b5-4147-4817-940d-b86e4329cffd">
+    <Deployment runDeploymentRoot="Jari Huilla_SYSTEEMILUOKKA 2022-12-04 13_11_23">
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\Tuni.MppOpcUaClientLib.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaBase.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaClient.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\bin\Debug\gui-app.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2022-12-04T13:11:23.5436083+02:00" queuing="2022-12-04T13:11:27.0436531+02:00" start="2022-12-04T13:11:27.2624059+02:00" finish="2022-12-04T13:12:20.3255851+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="shutdown_processTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="64299ba7-01b4-3852-ddb4-66fb1ddd418c">
+      <Execution id="bbe34a7b-9798-42ba-9dc5-4e840a9e8926" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="shutdown_processTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" executionId="bbe34a7b-9798-42ba-9dc5-4e840a9e8926" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bbe34a7b-9798-42ba-9dc5-4e840a9e8926" testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" testName="shutdown_processTest" computerName="SYSTEEMILUOKKA" duration="00:00:51.6892666" startTime="2022-12-04T13:11:27.3874075+02:00" endTime="2022-12-04T13:12:19.8724543+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bbe34a7b-9798-42ba-9dc5-4e840a9e8926">
+      <Output>
+        <DebugTrace>13:11:30.121|0012|01|4|DEBUGGER DETECTED: Adding TraceConsoleListener.
+13:11:30.137|0012|01|2|Generated default application settings.
+13:11:30.137|0012|01|4|Processing Command Line: {C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\QTAgent32.exe|/agentKey|32edccf0-353e-45f0-bbcd-e4444eaf82b3|/hostProcessId|1900|/hostIpcPortName|eqt-c1aa22c0-6d97-8d92-e337-785a861f7c75}
+13:11:30.168|0012|01|4|Creating Certificate in Store: %CommonApplicationData%\UnifiedAutomation\CertificateStores\PrivateKeys
+13:11:30.231|0012|01|1|[BadConfigurationError] Could not create a new certificate.|StatusException|Cannot find the CertificateGenerator utility in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\TestResults\Jari Huilla_SYSTEEMILUOKKA 2022-12-04 13_11_23\Out. Please check your configuration.
+13:11:30.278|0012|02|0|MODULE LOADED [2] UnifiedAutomation.Client
+13:11:30.324|0012|02|4|CONNECTION STATUS CHANGED: Connecting opc.tcp://127.0.0.1:8087
+13:11:30.418|0016|01|4|SECURE CHANNEL CREATED [TcpClientChannel UA-TCP 2.0.0.0] [Channel=0/Token=1] Connected To: opc.tcp://127.0.0.1:8087/ [None/None/]
+13:11:30.449|0018|01|4|TCPCLIENTCHANNEL Shutdown Socket=00000894, ChannelId=17, TokenId=1, Reason=[BadSecureChannelClosed]Socket was closed gracefully
+13:11:30.465|0019|01|4|TCPCLIENTCHANNEL Shutdown Socket=00000000, ChannelId=0, TokenId=0, Reason=[BadConnectionClosed]BadConnectionClosed
+13:11:30.465|0019|01|4|Selecting URL for DiscoveryUrl=opc.tcp://127.0.0.1:8087//UseSecurity=False/transportProfileUri=
+13:11:30.481|0019|01|2|Ignoring invalid endpoint returned from server with SecurityPolicyUri=http://opcfoundation.org/UA/SecurityPolicy#Basic128Rsa15
+13:11:30.481|0019|01|2|Ignoring invalid endpoint returned from server with SecurityPolicyUri=http://opcfoundation.org/UA/SecurityPolicy#Basic256
+13:11:30.481|0019|01|2|Ignoring invalid endpoint returned from server with SecurityPolicyUri=http://opcfoundation.org/UA/SecurityPolicy#Basic128Rsa15
+13:11:30.481|0019|01|2|Ignoring invalid endpoint returned from server with SecurityPolicyUri=http://opcfoundation.org/UA/SecurityPolicy#Basic256
+13:11:30.481|0019|01|2|Server returned URLs with the Domain='systeemiluokka'. Replacing with Domain=127.0.0.1
+13:11:30.481|0017|01|4|SECURE CHANNEL CREATED [TcpClientChannel UA-TCP 2.0.0.0] [Channel=0/Token=1] Connected To: opc.tcp://127.0.0.1:8087/ [None/None/]
+13:11:30.528|0018|02|4|GetUserIdentityToken: TokenType=Anonymous SecurityPolicyUri=
+13:11:30.699|0023|02|4|SUBSCRIPTION CREATED: [ns=1;g=bc13bb6c-a8c1-cfcc-52dc-3898a909e290] #968436
+13:11:37.528|0017|02|4|Reset m_watchdogReadPending
+13:12:08.184|0029|02|4|WatchdogRead pending.
+13:12:19.778|0014|02|4|WatchdogRead pending.
+13:12:19.778|0029|02|4|WatchdogRead pending.
+13:12:19.809|0030|02|4|Reset m_watchdogReadPending
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.shutdown_processTest threw exception: 
+System.InvalidOperationException: Unexpected state of client object</Message>
+          <StackTrace>    at Tuni.MppOpcUaClientLib.MppClient.StatefulSynchroniser.AssertStateValue(StateType expected) in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 578
+   at Tuni.MppOpcUaClientLib.MppClient.StatefulSynchroniser.get_Subscription() in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 552
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

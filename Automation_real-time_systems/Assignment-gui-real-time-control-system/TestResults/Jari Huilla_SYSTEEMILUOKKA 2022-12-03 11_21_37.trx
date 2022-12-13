@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4888c4b4-ca03-4eaf-8935-88003ae08f12" name="Jari Huilla@SYSTEEMILUOKKA 2022-12-03 11:21:37" runUser="SYSTEEMILUOKKA\Jari Huilla" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="9bf19a6e-1f55-4d6c-823f-a0020c7bc678">
+    <Deployment runDeploymentRoot="Jari Huilla_SYSTEEMILUOKKA 2022-12-03 11_21_37">
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\Tuni.MppOpcUaClientLib.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaBase.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaClient.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\bin\Debug\gui-app.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2022-12-03T11:21:37.6592736+02:00" queuing="2022-12-03T11:21:39.3467736+02:00" start="2022-12-03T11:21:39.5030236+02:00" finish="2022-12-03T11:27:06.6119178+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="12" executed="12" passed="9" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="change_TI300_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="bcfe03aa-534e-66e1-a154-61c7d45a33a1">
+      <Execution id="52bb5293-97f3-42f4-b892-5b99215b8b81" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="change_TI300_valueTest" />
+    </UnitTest>
+    <UnitTest name="toggle_valveTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="7dc9c9a3-ee2a-f9ea-cec2-1a8e8a2ba7ec">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="aa3963d3-3164-4c43-b08d-fc060233b7c5" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="toggle_valveTest" />
+    </UnitTest>
+    <UnitTest name="invoke_valve_controlTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="9036e272-344d-da4d-c06e-c135863cfbb2">
+      <Execution id="81e15a9d-70fe-43f8-a2bc-2d4690b92274" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="invoke_valve_controlTest" />
+    </UnitTest>
+    <UnitTest name="update_pump_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="79603908-6c58-f867-d926-813208ddb12d">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="3fb7e260-ee3d-408a-99a0-a090927a54c4" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_pump_valueTest" />
+    </UnitTest>
+    <UnitTest name="change_sequence_statusTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="3bd0d5a0-e9de-ce8f-b3c1-a6babb01f328">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="f7f44f27-70b4-4905-ada1-c4c6a151ae0d" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="change_sequence_statusTest" />
+    </UnitTest>
+    <UnitTest name="update_LS300m_statusTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="6e367d9c-9993-1d41-1249-e61835bc3870">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="4cf8e3d3-a16c-4522-9296-86b5070d5afa" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_LS300m_statusTest" />
+    </UnitTest>
+    <UnitTest name="invoke_E100_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="7b0b0322-03c5-bfa5-6884-8a7285deb251">
+      <Execution id="fb46fe67-8711-4988-b736-8094b2e5e7f9" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="invoke_E100_valueTest" />
+    </UnitTest>
+    <UnitTest name="update_PI300_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="381a9000-13f7-0ac0-d1c9-a793b91f09b2">
+      <Execution id="01aeddf7-cf37-4e72-aabf-f06e2bf19192" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_PI300_valueTest" />
+    </UnitTest>
+    <UnitTest name="update_pb_StatusTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="8ac0dc75-b417-f8db-9da9-ddf97bd434a3">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="c2542ad4-abd6-4bf1-b7c9-000f046222ee" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_pb_StatusTest" />
+    </UnitTest>
+    <UnitTest name="change_E100_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="b53aebfb-dd1b-29c6-5b46-5924eb5bd43c">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="4edce28a-7748-4297-8aca-08b06bba97af" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="change_E100_valueTest" />
+    </UnitTest>
+    <UnitTest name="connection_onlineTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="f4718b36-646b-2b11-f5c9-9a9c0bf1492a">
+      <Execution id="af29ca26-a26d-4f9c-ab3c-42206d2bb392" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="connection_onlineTest" />
+    </UnitTest>
+    <UnitTest name="connection_offlineTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="b0805486-7606-6eff-4d14-e06f479655d8">
+      <Execution id="3d75a92b-b1d3-4929-be7b-bbc989409f7f" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="connection_offlineTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="381a9000-13f7-0ac0-d1c9-a793b91f09b2" executionId="01aeddf7-cf37-4e72-aabf-f06e2bf19192" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bd0d5a0-e9de-ce8f-b3c1-a6babb01f328" executionId="f7f44f27-70b4-4905-ada1-c4c6a151ae0d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e367d9c-9993-1d41-1249-e61835bc3870" executionId="4cf8e3d3-a16c-4522-9296-86b5070d5afa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79603908-6c58-f867-d926-813208ddb12d" executionId="3fb7e260-ee3d-408a-99a0-a090927a54c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b0b0322-03c5-bfa5-6884-8a7285deb251" executionId="fb46fe67-8711-4988-b736-8094b2e5e7f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7dc9c9a3-ee2a-f9ea-cec2-1a8e8a2ba7ec" executionId="aa3963d3-3164-4c43-b08d-fc060233b7c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ac0dc75-b417-f8db-9da9-ddf97bd434a3" executionId="c2542ad4-abd6-4bf1-b7c9-000f046222ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9036e272-344d-da4d-c06e-c135863cfbb2" executionId="81e15a9d-70fe-43f8-a2bc-2d4690b92274" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0805486-7606-6eff-4d14-e06f479655d8" executionId="3d75a92b-b1d3-4929-be7b-bbc989409f7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b53aebfb-dd1b-29c6-5b46-5924eb5bd43c" executionId="4edce28a-7748-4297-8aca-08b06bba97af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bcfe03aa-534e-66e1-a154-61c7d45a33a1" executionId="52bb5293-97f3-42f4-b892-5b99215b8b81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4718b36-646b-2b11-f5c9-9a9c0bf1492a" executionId="af29ca26-a26d-4f9c-ab3c-42206d2bb392" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="01aeddf7-cf37-4e72-aabf-f06e2bf19192" testId="381a9000-13f7-0ac0-d1c9-a793b91f09b2" testName="update_PI300_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.2911286" startTime="2022-12-03T11:21:39.5811486+02:00" endTime="2022-12-03T11:21:40.5811486+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01aeddf7-cf37-4e72-aabf-f06e2bf19192">
+    </UnitTestResult>
+    <UnitTestResult executionId="f7f44f27-70b4-4905-ada1-c4c6a151ae0d" testId="3bd0d5a0-e9de-ce8f-b3c1-a6babb01f328" testName="change_sequence_statusTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0380576" startTime="2022-12-03T11:21:40.5967736+02:00" endTime="2022-12-03T11:21:40.6280236+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7f44f27-70b4-4905-ada1-c4c6a151ae0d">
+    </UnitTestResult>
+    <UnitTestResult executionId="4cf8e3d3-a16c-4522-9296-86b5070d5afa" testId="6e367d9c-9993-1d41-1249-e61835bc3870" testName="update_LS300m_statusTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0319495" startTime="2022-12-03T11:21:40.6280236+02:00" endTime="2022-12-03T11:21:40.6748986+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cf8e3d3-a16c-4522-9296-86b5070d5afa">
+    </UnitTestResult>
+    <UnitTestResult executionId="3fb7e260-ee3d-408a-99a0-a090927a54c4" testId="79603908-6c58-f867-d926-813208ddb12d" testName="update_pump_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0252571" startTime="2022-12-03T11:21:40.6748986+02:00" endTime="2022-12-03T11:21:40.7061486+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fb7e260-ee3d-408a-99a0-a090927a54c4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;40 %&gt;. Actual:&lt;P100 %&gt;. </Message>
+          <StackTrace>   at unit_tests.MainWindowTest.update_pump_valueTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\MainWindowTest.cs:line 242
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fb46fe67-8711-4988-b736-8094b2e5e7f9" testId="7b0b0322-03c5-bfa5-6884-8a7285deb251" testName="invoke_E100_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0316774" startTime="2022-12-03T11:21:40.7061486+02:00" endTime="2022-12-03T11:21:40.7530236+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb46fe67-8711-4988-b736-8094b2e5e7f9">
+    </UnitTestResult>
+    <UnitTestResult executionId="aa3963d3-3164-4c43-b08d-fc060233b7c5" testId="7dc9c9a3-ee2a-f9ea-cec2-1a8e8a2ba7ec" testName="toggle_valveTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0160830" startTime="2022-12-03T11:21:40.7530236+02:00" endTime="2022-12-03T11:21:40.7686486+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa3963d3-3164-4c43-b08d-fc060233b7c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="c2542ad4-abd6-4bf1-b7c9-000f046222ee" testId="8ac0dc75-b417-f8db-9da9-ddf97bd434a3" testName="update_pb_StatusTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0240480" startTime="2022-12-03T11:21:40.7686486+02:00" endTime="2022-12-03T11:21:40.7998986+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2542ad4-abd6-4bf1-b7c9-000f046222ee">
+    </UnitTestResult>
+    <UnitTestResult executionId="81e15a9d-70fe-43f8-a2bc-2d4690b92274" testId="9036e272-344d-da4d-c06e-c135863cfbb2" testName="invoke_valve_controlTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0191691" startTime="2022-12-03T11:21:40.7998986+02:00" endTime="2022-12-03T11:21:40.8311486+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81e15a9d-70fe-43f8-a2bc-2d4690b92274">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;25 %&gt;. Actual:&lt;0 %&gt;. </Message>
+          <StackTrace>   at unit_tests.MainWindowTest.invoke_valve_controlTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\MainWindowTest.cs:line 185
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3d75a92b-b1d3-4929-be7b-bbc989409f7f" testId="b0805486-7606-6eff-4d14-e06f479655d8" testName="connection_offlineTest" computerName="SYSTEEMILUOKKA" duration="00:05:25.4736719" startTime="2022-12-03T11:21:40.8623986+02:00" endTime="2022-12-03T11:27:06.3306660+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d75a92b-b1d3-4929-be7b-bbc989409f7f">
+    </UnitTestResult>
+    <UnitTestResult executionId="4edce28a-7748-4297-8aca-08b06bba97af" testId="b53aebfb-dd1b-29c6-5b46-5924eb5bd43c" testName="change_E100_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.1023359" startTime="2022-12-03T11:27:06.3306660+02:00" endTime="2022-12-03T11:27:06.4400417+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4edce28a-7748-4297-8aca-08b06bba97af">
+    </UnitTestResult>
+    <UnitTestResult executionId="52bb5293-97f3-42f4-b892-5b99215b8b81" testId="bcfe03aa-534e-66e1-a154-61c7d45a33a1" testName="change_TI300_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0349692" startTime="2022-12-03T11:27:06.4556668+02:00" endTime="2022-12-03T11:27:06.4869170+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52bb5293-97f3-42f4-b892-5b99215b8b81">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0 °C&gt;. Actual:&lt;20.0 °C&gt;. </Message>
+          <StackTrace>   at unit_tests.MainWindowTest.change_TI300_valueTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\MainWindowTest.cs:line 100
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="af29ca26-a26d-4f9c-ab3c-42206d2bb392" testId="f4718b36-646b-2b11-f5c9-9a9c0bf1492a" testName="connection_onlineTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0277498" startTime="2022-12-03T11:27:06.4869170+02:00" endTime="2022-12-03T11:27:06.5337923+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af29ca26-a26d-4f9c-ab3c-42206d2bb392">
+    </UnitTestResult>
+  </Results>
+</TestRun>

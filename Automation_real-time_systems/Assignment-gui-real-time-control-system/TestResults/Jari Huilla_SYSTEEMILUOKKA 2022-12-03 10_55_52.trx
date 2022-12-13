@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="77573330-1551-4331-bb40-265897fda029" name="Jari Huilla@SYSTEEMILUOKKA 2022-12-03 10:55:52" runUser="SYSTEEMILUOKKA\Jari Huilla" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="21677b4a-41a8-457e-9a1a-9abe3af6ac55">
+    <Deployment runDeploymentRoot="Jari Huilla_SYSTEEMILUOKKA 2022-12-03 10_55_52">
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\Tuni.MppOpcUaClientLib.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaBase.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaClient.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\bin\Debug\gui-app.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2022-12-03T10:55:52.0834293+02:00" queuing="2022-12-03T10:55:53.6146205+02:00" start="2022-12-03T10:55:53.7708645+02:00" finish="2022-12-03T10:55:55.2239337+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="stop_button_ClickTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="4971499d-9c96-8a58-34e4-16fc576e64bc">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="c21e8b05-7cb9-4db7-88f1-41d04c457d59" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="stop_button_ClickTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4971499d-9c96-8a58-34e4-16fc576e64bc" executionId="c21e8b05-7cb9-4db7-88f1-41d04c457d59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c21e8b05-7cb9-4db7-88f1-41d04c457d59" testId="4971499d-9c96-8a58-34e4-16fc576e64bc" testName="stop_button_ClickTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.3820728" startTime="2022-12-03T10:55:53.8333621+02:00" endTime="2022-12-03T10:55:54.7239529+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c21e8b05-7cb9-4db7-88f1-41d04c457d59">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.MainWindowTest.stop_button_ClickTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.MainWindow_Accessor.stop_button_Click(Object sender, RoutedEventArgs e)
+   at unit_tests.MainWindowTest.stop_button_ClickTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\MainWindowTest.cs:line 291
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

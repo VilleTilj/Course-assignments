@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9c183384-bcf3-4652-9ddc-22027b3959d0" name="Jari Huilla@SYSTEEMILUOKKA 2022-12-04 13:09:14" runUser="SYSTEEMILUOKKA\Jari Huilla" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="165673f6-fa7f-4848-b0c1-79b2ca8658db">
+    <Deployment userDeploymentRoot="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="Jari Huilla_SYSTEEMILUOKKA 2022-12-04 13_09_14">
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\Tuni.MppOpcUaClientLib.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaBase.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaClient.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\bin\Debug\gui-app.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2022-12-04T13:09:14.0427187+02:00" queuing="2022-12-04T13:09:16.3552483+02:00" start="2022-12-04T13:09:16.4646247+02:00" finish="2022-12-04T13:09:17.5115131+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" error="0" failed="1" timeout="0" aborted="0" inconclusive="3" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ControlConstructorTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="77c302de-377d-d7ab-6e04-e3852b7ea1a4">
+      <Execution id="cc36ed7d-19fa-46d8-b3c0-da2895d8e740" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ControlTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ControlConstructorTest" />
+    </UnitTest>
+    <UnitTest name="shutdown_processTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="64299ba7-01b4-3852-ddb4-66fb1ddd418c">
+      <Execution id="00edd081-0080-45b4-af54-ba17fee7b2fb" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="shutdown_processTest" />
+    </UnitTest>
+    <UnitTest name="temperature_controlTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="50910027-bca4-5b3b-853c-152508de3f8e">
+      <Execution id="57c10a74-7bac-4c0b-8bc1-ca4f0b9dc553" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ControlTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="temperature_controlTest" />
+    </UnitTest>
+    <UnitTest name="pressure_controlTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="db685ce1-79d9-c78e-3954-604e7dc5158c">
+      <Execution id="d6ae3228-c5dc-43f2-8761-1a12a1dc033d" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ControlTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pressure_controlTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="50910027-bca4-5b3b-853c-152508de3f8e" executionId="57c10a74-7bac-4c0b-8bc1-ca4f0b9dc553" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db685ce1-79d9-c78e-3954-604e7dc5158c" executionId="d6ae3228-c5dc-43f2-8761-1a12a1dc033d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" executionId="00edd081-0080-45b4-af54-ba17fee7b2fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77c302de-377d-d7ab-6e04-e3852b7ea1a4" executionId="cc36ed7d-19fa-46d8-b3c0-da2895d8e740" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="57c10a74-7bac-4c0b-8bc1-ca4f0b9dc553" testId="50910027-bca4-5b3b-853c-152508de3f8e" testName="temperature_controlTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0348519" startTime="2022-12-04T13:09:16.4802499+02:00" endTime="2022-12-04T13:09:16.9490059+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57c10a74-7bac-4c0b-8bc1-ca4f0b9dc553">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at unit_tests.ControlTest.temperature_controlTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\ControlTest.cs:line 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d6ae3228-c5dc-43f2-8761-1a12a1dc033d" testId="db685ce1-79d9-c78e-3954-604e7dc5158c" testName="pressure_controlTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0008450" startTime="2022-12-04T13:09:16.9490059+02:00" endTime="2022-12-04T13:09:16.9646311+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6ae3228-c5dc-43f2-8761-1a12a1dc033d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at unit_tests.ControlTest.pressure_controlTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\ControlTest.cs:line 95
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="00edd081-0080-45b4-af54-ba17fee7b2fb" testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" testName="shutdown_processTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.3400711" startTime="2022-12-04T13:09:16.9646311+02:00" endTime="2022-12-04T13:09:17.3083855+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00edd081-0080-45b4-af54-ba17fee7b2fb">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.shutdown_processTest threw exception: 
+System.InvalidOperationException: Unexpected state of client object</Message>
+          <StackTrace>    at Tuni.MppOpcUaClientLib.MppClient.StatefulSynchroniser.AssertStateValue(StateType expected) in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 578
+   at Tuni.MppOpcUaClientLib.MppClient.StatefulSynchroniser.get_NamespaceIndex() in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 568
+   at Tuni.MppOpcUaClientLib.MppClient.SetValueAtServer(String name, Variant variant) in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 387
+   at Tuni.MppOpcUaClientLib.MppClient.SetOnOffItem(String name, Boolean value) in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 156
+   at gui_app.Logic.shutdown_process() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\logic.cs:line 46
+   at unit_tests.LogicTest.shutdown_processTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cc36ed7d-19fa-46d8-b3c0-da2895d8e740" testId="77c302de-377d-d7ab-6e04-e3852b7ea1a4" testName="ControlConstructorTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0014367" startTime="2022-12-04T13:09:17.3083855+02:00" endTime="2022-12-04T13:09:17.3083855+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc36ed7d-19fa-46d8-b3c0-da2895d8e740">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at unit_tests.ControlTest.ControlConstructorTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\ControlTest.cs:line 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

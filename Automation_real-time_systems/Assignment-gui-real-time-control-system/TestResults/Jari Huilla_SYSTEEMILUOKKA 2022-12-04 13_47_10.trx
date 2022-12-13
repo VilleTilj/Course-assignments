@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e98e2a0d-72ca-4d3f-ad74-f47723445c30" name="Jari Huilla@SYSTEEMILUOKKA 2022-12-04 13:47:10" runUser="SYSTEEMILUOKKA\Jari Huilla" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="328c06b1-63cf-4941-a5a3-8136be6cc2c6">
+    <Deployment runDeploymentRoot="Jari Huilla_SYSTEEMILUOKKA 2022-12-04 13_47_10">
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\Tuni.MppOpcUaClientLib.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaBase.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaClient.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\bin\Debug\gui-app.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2022-12-04T13:47:10.6891591+02:00" queuing="2022-12-04T13:47:13.0484133+02:00" start="2022-12-04T13:47:13.1890311+02:00" finish="2022-12-04T13:47:14.8139479+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="pressure_controlTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="db685ce1-79d9-c78e-3954-604e7dc5158c">
+      <Execution id="d7fe614d-707c-43ae-9f1e-717892f642b7" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ControlTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pressure_controlTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="db685ce1-79d9-c78e-3954-604e7dc5158c" executionId="d7fe614d-707c-43ae-9f1e-717892f642b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d7fe614d-707c-43ae-9f1e-717892f642b7" testId="db685ce1-79d9-c78e-3954-604e7dc5158c" testName="pressure_controlTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0450451" startTime="2022-12-04T13:47:13.2827763+02:00" endTime="2022-12-04T13:47:14.2202283+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d7fe614d-707c-43ae-9f1e-717892f642b7">
+    </UnitTestResult>
+  </Results>
+</TestRun>

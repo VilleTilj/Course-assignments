@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="544b4792-8995-4955-a447-be7b4cde956b" name="Jari Huilla@SYSTEEMILUOKKA 2022-12-04 13:10:57" runUser="SYSTEEMILUOKKA\Jari Huilla" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="bfefad36-134d-4c73-85b3-bee45c3a14c1">
+    <Deployment runDeploymentRoot="Jari Huilla_SYSTEEMILUOKKA 2022-12-04 13_10_57">
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\Tuni.MppOpcUaClientLib.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaBase.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaClient.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\bin\Debug\gui-app.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2022-12-04T13:10:57.4183089+02:00" queuing="2022-12-04T13:11:01.3089487+02:00" start="2022-12-04T13:11:01.6370779+02:00" finish="2022-12-04T13:11:05.8090063+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="shutdown_processTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="64299ba7-01b4-3852-ddb4-66fb1ddd418c">
+      <Execution id="a8a97be8-c721-41f2-92af-7a6edc1d3042" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="shutdown_processTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" executionId="a8a97be8-c721-41f2-92af-7a6edc1d3042" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a8a97be8-c721-41f2-92af-7a6edc1d3042" testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" testName="shutdown_processTest" computerName="SYSTEEMILUOKKA" duration="00:00:03.4349818" startTime="2022-12-04T13:11:01.7464543+02:00" endTime="2022-12-04T13:11:05.6371291+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8a97be8-c721-41f2-92af-7a6edc1d3042">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.shutdown_processTest threw exception: 
+System.InvalidOperationException: Unexpected state of client object</Message>
+          <StackTrace>    at Tuni.MppOpcUaClientLib.MppClient.StatefulSynchroniser.AssertStateValue(StateType expected) in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 578
+   at Tuni.MppOpcUaClientLib.MppClient.StatefulSynchroniser.get_NamespaceIndex() in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 568
+   at Tuni.MppOpcUaClientLib.MppClient.SetValueAtServer(String name, Variant variant) in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 387
+   at Tuni.MppOpcUaClientLib.MppClient.SetOnOffItem(String name, Boolean value) in C:\lokaali\lokaali_ws\rajo\MppOpcUaClientLib\MppOpcUaClientLib\MppClient.cs:line 156
+   at gui_app.Logic.shutdown_process() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\logic.cs:line 46
+   at unit_tests.LogicTest.shutdown_processTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

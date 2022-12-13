@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="933a1a5f-d1ba-4eab-be69-eb7a35f2107a" name="Jari Huilla@SYSTEEMILUOKKA 2022-12-04 12:13:33" runUser="SYSTEEMILUOKKA\Jari Huilla" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="ab12660b-cc31-4c12-a9fb-a59867abd83b">
+    <Deployment runDeploymentRoot="Jari Huilla_SYSTEEMILUOKKA 2022-12-04 12_13_33">
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\Tuni.MppOpcUaClientLib.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaBase.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\MppOpcUaClientLib_dll (1)\MppOpcUaClientLib_dll\UnifiedAutomation.UaClient.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\bin\Debug\gui-app.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2022-12-04T12:13:33.4502391+02:00" queuing="2022-12-04T12:13:34.9345761+02:00" start="2022-12-04T12:13:35.0595729+02:00" finish="2022-12-04T12:13:47.9967417+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="53" executed="53" passed="16" error="0" failed="32" timeout="0" aborted="0" inconclusive="5" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="change_sequence_statusTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="3bd0d5a0-e9de-ce8f-b3c1-a6babb01f328">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="70bb510d-2c69-4cd4-845e-dd63931ad7ba" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="change_sequence_statusTest" />
+    </UnitTest>
+    <UnitTest name="EM5_OP4Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="135d9a16-0f3d-d98b-b384-52f48469a9fc">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="bb495d06-103c-4f51-b75d-a74d620f20a7" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM5_OP4Test" />
+    </UnitTest>
+    <UnitTest name="toggle_valveTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="7dc9c9a3-ee2a-f9ea-cec2-1a8e8a2ba7ec">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="d82f4712-6572-4a28-8b7c-5e43bb5dd335" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="toggle_valveTest" />
+    </UnitTest>
+    <UnitTest name="update_pump_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="79603908-6c58-f867-d926-813208ddb12d">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="7fb771f0-701e-4ae0-9b17-183654873d33" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_pump_valueTest" />
+    </UnitTest>
+    <UnitTest name="ControlConstructorTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="77c302de-377d-d7ab-6e04-e3852b7ea1a4">
+      <Execution id="c3b7b820-5779-4121-b760-ed130d3ef5cf" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ControlTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ControlConstructorTest" />
+    </UnitTest>
+    <UnitTest name="temperature_controlTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="50910027-bca4-5b3b-853c-152508de3f8e">
+      <Execution id="22b79fac-5d7b-410b-b4a0-da6dc7856592" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ControlTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="temperature_controlTest" />
+    </UnitTest>
+    <UnitTest name="white_liquor_fillTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="559cae99-0cdf-f67f-04b4-de1bd78272f9">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="4ec35f1c-3b33-425c-8dbd-b0c0141b5243" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="white_liquor_fillTest" />
+    </UnitTest>
+    <UnitTest name="EM4_OP1Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="3e7645e8-799a-a23a-c556-4a27cd05317d">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="97f27dc4-7e02-4c97-929b-d2738acddb20" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM4_OP1Test" />
+    </UnitTest>
+    <UnitTest name="EM1_OP2Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="907d3d6c-1c5d-7ea5-73ea-4d2a9b726439">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="ab48d42f-2f20-494b-8eb1-dcf566c31d70" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM1_OP2Test" />
+    </UnitTest>
+    <UnitTest name="dischargeTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="6f3c8267-44fd-9dd6-1aef-bc93eeb2c1a4">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="752ff271-73ba-4575-a978-82b0f0656d24" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="dischargeTest" />
+    </UnitTest>
+    <UnitTest name="U1_OP3Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="fd2ef5ec-5e5e-6304-613d-dc2abffd59c9">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="a6f65480-cd65-483c-918b-4c1c6eb9ecc0" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="U1_OP3Test" />
+    </UnitTest>
+    <UnitTest name="shutdown_processTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="64299ba7-01b4-3852-ddb4-66fb1ddd418c">
+      <Execution id="907d668a-7c17-490d-843c-1f4911dc7fed" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="shutdown_processTest" />
+    </UnitTest>
+    <UnitTest name="U1_OP1Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="cc713445-75e4-3ddd-4f7b-4883675cea50">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="ca54d5ca-2f82-47c9-a722-bb00e70b1223" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="U1_OP1Test" />
+    </UnitTest>
+    <UnitTest name="EM5_OP1Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="190cf5ac-e335-12c6-e286-0a62f070242d">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="0433e9e4-60ff-4e0d-8874-993583ba7eaf" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM5_OP1Test" />
+    </UnitTest>
+    <UnitTest name="EM3_OP4Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="43a78f4d-84b5-1406-8c7b-f0ff9b22a81c">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="9088ce25-536b-4d7f-b917-94460c460beb" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP4Test" />
+    </UnitTest>
+    <UnitTest name="cookingTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="4651fef4-be07-f97e-dc5f-1f879df387d5">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="2362c183-90cc-4264-b3c9-6024b6a98f97" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cookingTest" />
+    </UnitTest>
+    <UnitTest name="EM1_OP1Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="3a2a0858-23be-19a9-e854-c9b2440ca5c8">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="c37493aa-bd59-40c0-a6ae-8f7526401a5a" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM1_OP1Test" />
+    </UnitTest>
+    <UnitTest name="check_cookign_input_valTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="a44017f8-8b5c-5909-536d-3ebcc259f952">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="b357ba05-915a-466d-a257-248802cb405a" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="check_cookign_input_valTest" />
+    </UnitTest>
+    <UnitTest name="EM5_OP2Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="9babf3fc-a46b-9592-3a7e-6eb979254120">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="cacf7fc3-823e-43a3-8bec-4b0854fbcd0c" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM5_OP2Test" />
+    </UnitTest>
+    <UnitTest name="EM3_OP5Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="ee154a8a-177f-5471-fe8f-a19abf8c0f12">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="5f845e41-b0b4-44e8-aad7-f37971758e07" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP5Test" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="fc457851-7569-0712-7c1c-5d9d65262068">
+      <Execution id="c4817db7-2840-4fcc-aab3-297b387bd754" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ConnectOpcUaTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="set_valve_controlTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="b42c3a56-667a-f33b-8392-5960b32e3f0c">
+      <Execution id="4f515420-bc5f-4cb6-bfe9-ae2c4980e518" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="set_valve_controlTest" />
+    </UnitTest>
+    <UnitTest name="EM4_OP2Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="225e5f49-9319-5e20-15eb-71e980b61aa7">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="a000c46c-f016-4838-a2ca-13e88ef8f7d2" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM4_OP2Test" />
+    </UnitTest>
+    <UnitTest name="change_E100_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="b53aebfb-dd1b-29c6-5b46-5924eb5bd43c">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="bc2d96e7-5deb-4009-b4b8-3dec8eaae576" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="change_E100_valueTest" />
+    </UnitTest>
+    <UnitTest name="EM1_OP4Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="d4ecd901-031d-812e-030d-cfebb162feaf">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="7980af1b-a16e-4f31-8bfc-33ef5032eda4" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM1_OP4Test" />
+    </UnitTest>
+    <UnitTest name="connection_offlineTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="b0805486-7606-6eff-4d14-e06f479655d8">
+      <Execution id="80090b6b-8757-40c3-97c0-0487d4a1dfd8" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="connection_offlineTest" />
+    </UnitTest>
+    <UnitTest name="EM3_OP6Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="9a064fba-8260-d8f3-431c-da15e7436be3">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="3c06da16-3f4b-4107-9905-061ac7453f2b" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP6Test" />
+    </UnitTest>
+    <UnitTest name="EM2_OP2Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="2484c15f-a6bd-8fdd-62e9-34805d7138ee">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="706dd381-2f9b-43a0-82b4-33e1bbd24e65" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM2_OP2Test" />
+    </UnitTest>
+    <UnitTest name="check_input_valTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="6bd171df-c382-1558-2c7e-89b53efa35aa">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="9c80e743-520f-4897-8175-69532998508b" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="check_input_valTest" />
+    </UnitTest>
+    <UnitTest name="impregnationTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="1a7e60df-ef55-c1eb-d5bd-cd063bbbe14f">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="26a2def6-4b78-4b37-b0df-f4ea3f230af4" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="impregnationTest" />
+    </UnitTest>
+    <UnitTest name="update_pb_StatusTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="8ac0dc75-b417-f8db-9da9-ddf97bd434a3">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="0efc8f76-efe0-43b1-b0e4-eba022f7e32d" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_pb_StatusTest" />
+    </UnitTest>
+    <UnitTest name="black_liquor_fillTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="cb9f4255-bba2-0788-8d42-3f2275175fc3">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="fa8df897-6ec4-4ed6-89af-f62fc371c1b1" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="black_liquor_fillTest" />
+    </UnitTest>
+    <UnitTest name="processTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="5de9d446-578b-4360-59f1-81fd6aedfe6f">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="f5e6fda8-678c-4781-b985-33c1cdcedfab" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="processTest" />
+    </UnitTest>
+    <UnitTest name="invoke_E100_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="7b0b0322-03c5-bfa5-6884-8a7285deb251">
+      <Execution id="866a791d-09fa-4d02-92c2-5a36c258a15a" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="invoke_E100_valueTest" />
+    </UnitTest>
+    <UnitTest name="EM3_OP1Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="2c0e89c9-79c6-22bb-d773-0a395390dc69">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="943c00e5-2780-4a97-adf9-4d7a86bc8c58" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP1Test" />
+    </UnitTest>
+    <UnitTest name="connection_onlineTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="f4718b36-646b-2b11-f5c9-9a9c0bf1492a">
+      <Execution id="c926afb1-ca81-4ed3-ab85-a646bf5b6bec" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="connection_onlineTest" />
+    </UnitTest>
+    <UnitTest name="pressure_controlTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="db685ce1-79d9-c78e-3954-604e7dc5158c">
+      <Execution id="b79928a0-c708-40bf-9927-be2d2e1518d1" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ControlTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pressure_controlTest" />
+    </UnitTest>
+    <UnitTest name="EM3_OP8Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="2a434934-e4d9-ee0e-6c3a-4a8422942f18">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="1e609d24-0c56-410b-8b63-985b3cbe69b6" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP8Test" />
+    </UnitTest>
+    <UnitTest name="EM1_OP3Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="f3a6c914-560d-1140-6f85-f88e70cddb6a">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="37511d19-54f2-431e-a92c-39de0c75defc" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM1_OP3Test" />
+    </UnitTest>
+    <UnitTest name="EM3_OP7Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="e38ccfdc-9ab4-5eb0-e269-506394bd6b60">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="42a6a2e9-aa61-4d40-8c5b-3f6fd5570b04" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP7Test" />
+    </UnitTest>
+    <UnitTest name="EM5_OP3Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="fe678de6-d5ee-6074-95a2-83dfbf899f4b">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="7a10a304-abb8-461a-9828-dbd15815a0b3" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM5_OP3Test" />
+    </UnitTest>
+    <UnitTest name="LogicConstructorTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="7c41d6a4-800c-6ec6-101b-7d3d063f2709">
+      <Execution id="d4286271-3ad2-4d4c-9a90-817f7294ce83" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogicConstructorTest" />
+    </UnitTest>
+    <UnitTest name="EM2_OP1Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="e816d77c-2af0-f1c2-1dd2-1855f060da00">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="34f51271-3a5e-45c0-9278-b3eac47b532c" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM2_OP1Test" />
+    </UnitTest>
+    <UnitTest name="update_LS300m_statusTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="6e367d9c-9993-1d41-1249-e61835bc3870">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="f639ed05-ee67-4316-acd0-61ce3003c795" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_LS300m_statusTest" />
+    </UnitTest>
+    <UnitTest name="ConnectOpcUaConstructorTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="5b3ff60e-a583-2f5a-8951-53d06aaafd2c">
+      <Execution id="a3980326-40b9-4733-8e51-c2d792dfa646" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ConnectOpcUaTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConnectOpcUaConstructorTest" />
+    </UnitTest>
+    <UnitTest name="start_processTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="f2f954a3-de37-203c-ccb1-5cdb67e52f8c">
+      <Execution id="a34c6787-2f4b-4178-bd99-e634e890d832" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="start_processTest" />
+    </UnitTest>
+    <UnitTest name="U1_OP2Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="f64d7652-46e8-b802-ee98-974f95eac67c">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="2ec0bce3-1b72-493d-8ddd-4aa950bc605e" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="U1_OP2Test" />
+    </UnitTest>
+    <UnitTest name="connectTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="93c0981d-b76c-243b-e565-a1e65a1d6057">
+      <Execution id="49021f68-92e6-42bd-82de-09a6a0c03042" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.ConnectOpcUaTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="connectTest" />
+    </UnitTest>
+    <UnitTest name="update_TI300_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="ae0eeb43-6e0e-a48d-851f-e4cd34a41346">
+      <Execution id="c3783c1a-d70e-42a7-b55b-4710baa8b782" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_TI300_valueTest" />
+    </UnitTest>
+    <UnitTest name="EM3_OP3Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="3af9a9c8-a438-6bbb-13f1-fb9fafc29ac8">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="97e5ae1b-d871-4b48-9db5-541be80982a8" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP3Test" />
+    </UnitTest>
+    <UnitTest name="U1_OP4Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="2b60809d-3b40-e06e-d783-13daba8a50e4">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="2103f846-8969-4b61-af16-00551c3ba4bb" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="U1_OP4Test" />
+    </UnitTest>
+    <UnitTest name="EM3_OP2Test" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="3a3a04c0-beba-61c0-9596-37ab028e966a">
+      <DeploymentItems>
+        <DeploymentItem filename="gui-app.exe" />
+      </DeploymentItems>
+      <Execution id="f895097e-2594-4110-a958-02e1e2e8ade6" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.LogicTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EM3_OP2Test" />
+    </UnitTest>
+    <UnitTest name="update_PI300_valueTest" storage="c:\documents and settings\jari huilla\my documents\exercise\gui-app\unit_tests\unit_tests\bin\debug\unit_tests.dll" id="381a9000-13f7-0ac0-d1c9-a793b91f09b2">
+      <Execution id="4cc82c13-7ff6-4a6e-8488-6a7006ea3e18" />
+      <TestMethod codeBase="C:/Documents and Settings/Jari Huilla/My Documents/exercise/gui-app/unit_tests/unit_tests/bin/Debug/unit_tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="unit_tests.MainWindowTest, unit_tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="update_PI300_valueTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="135d9a16-0f3d-d98b-b384-52f48469a9fc" executionId="bb495d06-103c-4f51-b75d-a74d620f20a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="190cf5ac-e335-12c6-e286-0a62f070242d" executionId="0433e9e4-60ff-4e0d-8874-993583ba7eaf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a7e60df-ef55-c1eb-d5bd-cd063bbbe14f" executionId="26a2def6-4b78-4b37-b0df-f4ea3f230af4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="225e5f49-9319-5e20-15eb-71e980b61aa7" executionId="a000c46c-f016-4838-a2ca-13e88ef8f7d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2484c15f-a6bd-8fdd-62e9-34805d7138ee" executionId="706dd381-2f9b-43a0-82b4-33e1bbd24e65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a434934-e4d9-ee0e-6c3a-4a8422942f18" executionId="1e609d24-0c56-410b-8b63-985b3cbe69b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b60809d-3b40-e06e-d783-13daba8a50e4" executionId="2103f846-8969-4b61-af16-00551c3ba4bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c0e89c9-79c6-22bb-d773-0a395390dc69" executionId="943c00e5-2780-4a97-adf9-4d7a86bc8c58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="381a9000-13f7-0ac0-d1c9-a793b91f09b2" executionId="4cc82c13-7ff6-4a6e-8488-6a7006ea3e18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a2a0858-23be-19a9-e854-c9b2440ca5c8" executionId="c37493aa-bd59-40c0-a6ae-8f7526401a5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a3a04c0-beba-61c0-9596-37ab028e966a" executionId="f895097e-2594-4110-a958-02e1e2e8ade6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3af9a9c8-a438-6bbb-13f1-fb9fafc29ac8" executionId="97e5ae1b-d871-4b48-9db5-541be80982a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bd0d5a0-e9de-ce8f-b3c1-a6babb01f328" executionId="70bb510d-2c69-4cd4-845e-dd63931ad7ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e7645e8-799a-a23a-c556-4a27cd05317d" executionId="97f27dc4-7e02-4c97-929b-d2738acddb20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43a78f4d-84b5-1406-8c7b-f0ff9b22a81c" executionId="9088ce25-536b-4d7f-b917-94460c460beb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4651fef4-be07-f97e-dc5f-1f879df387d5" executionId="2362c183-90cc-4264-b3c9-6024b6a98f97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50910027-bca4-5b3b-853c-152508de3f8e" executionId="22b79fac-5d7b-410b-b4a0-da6dc7856592" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="559cae99-0cdf-f67f-04b4-de1bd78272f9" executionId="4ec35f1c-3b33-425c-8dbd-b0c0141b5243" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b3ff60e-a583-2f5a-8951-53d06aaafd2c" executionId="a3980326-40b9-4733-8e51-c2d792dfa646" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5de9d446-578b-4360-59f1-81fd6aedfe6f" executionId="f5e6fda8-678c-4781-b985-33c1cdcedfab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" executionId="907d668a-7c17-490d-843c-1f4911dc7fed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6bd171df-c382-1558-2c7e-89b53efa35aa" executionId="9c80e743-520f-4897-8175-69532998508b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e367d9c-9993-1d41-1249-e61835bc3870" executionId="f639ed05-ee67-4316-acd0-61ce3003c795" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f3c8267-44fd-9dd6-1aef-bc93eeb2c1a4" executionId="752ff271-73ba-4575-a978-82b0f0656d24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77c302de-377d-d7ab-6e04-e3852b7ea1a4" executionId="c3b7b820-5779-4121-b760-ed130d3ef5cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79603908-6c58-f867-d926-813208ddb12d" executionId="7fb771f0-701e-4ae0-9b17-183654873d33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b0b0322-03c5-bfa5-6884-8a7285deb251" executionId="866a791d-09fa-4d02-92c2-5a36c258a15a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c41d6a4-800c-6ec6-101b-7d3d063f2709" executionId="d4286271-3ad2-4d4c-9a90-817f7294ce83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7dc9c9a3-ee2a-f9ea-cec2-1a8e8a2ba7ec" executionId="d82f4712-6572-4a28-8b7c-5e43bb5dd335" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ac0dc75-b417-f8db-9da9-ddf97bd434a3" executionId="0efc8f76-efe0-43b1-b0e4-eba022f7e32d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="907d3d6c-1c5d-7ea5-73ea-4d2a9b726439" executionId="ab48d42f-2f20-494b-8eb1-dcf566c31d70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93c0981d-b76c-243b-e565-a1e65a1d6057" executionId="49021f68-92e6-42bd-82de-09a6a0c03042" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a064fba-8260-d8f3-431c-da15e7436be3" executionId="3c06da16-3f4b-4107-9905-061ac7453f2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9babf3fc-a46b-9592-3a7e-6eb979254120" executionId="cacf7fc3-823e-43a3-8bec-4b0854fbcd0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a44017f8-8b5c-5909-536d-3ebcc259f952" executionId="b357ba05-915a-466d-a257-248802cb405a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae0eeb43-6e0e-a48d-851f-e4cd34a41346" executionId="c3783c1a-d70e-42a7-b55b-4710baa8b782" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0805486-7606-6eff-4d14-e06f479655d8" executionId="80090b6b-8757-40c3-97c0-0487d4a1dfd8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b42c3a56-667a-f33b-8392-5960b32e3f0c" executionId="4f515420-bc5f-4cb6-bfe9-ae2c4980e518" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b53aebfb-dd1b-29c6-5b46-5924eb5bd43c" executionId="bc2d96e7-5deb-4009-b4b8-3dec8eaae576" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb9f4255-bba2-0788-8d42-3f2275175fc3" executionId="fa8df897-6ec4-4ed6-89af-f62fc371c1b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc713445-75e4-3ddd-4f7b-4883675cea50" executionId="ca54d5ca-2f82-47c9-a722-bb00e70b1223" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4ecd901-031d-812e-030d-cfebb162feaf" executionId="7980af1b-a16e-4f31-8bfc-33ef5032eda4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db685ce1-79d9-c78e-3954-604e7dc5158c" executionId="b79928a0-c708-40bf-9927-be2d2e1518d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e38ccfdc-9ab4-5eb0-e269-506394bd6b60" executionId="42a6a2e9-aa61-4d40-8c5b-3f6fd5570b04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e816d77c-2af0-f1c2-1dd2-1855f060da00" executionId="34f51271-3a5e-45c0-9278-b3eac47b532c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee154a8a-177f-5471-fe8f-a19abf8c0f12" executionId="5f845e41-b0b4-44e8-aad7-f37971758e07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2f954a3-de37-203c-ccb1-5cdb67e52f8c" executionId="a34c6787-2f4b-4178-bd99-e634e890d832" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3a6c914-560d-1140-6f85-f88e70cddb6a" executionId="37511d19-54f2-431e-a92c-39de0c75defc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4718b36-646b-2b11-f5c9-9a9c0bf1492a" executionId="c926afb1-ca81-4ed3-ab85-a646bf5b6bec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f64d7652-46e8-b802-ee98-974f95eac67c" executionId="2ec0bce3-1b72-493d-8ddd-4aa950bc605e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc457851-7569-0712-7c1c-5d9d65262068" executionId="c4817db7-2840-4fcc-aab3-297b387bd754" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd2ef5ec-5e5e-6304-613d-dc2abffd59c9" executionId="a6f65480-cd65-483c-918b-4c1c6eb9ecc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe678de6-d5ee-6074-95a2-83dfbf899f4b" executionId="7a10a304-abb8-461a-9828-dbd15815a0b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bb495d06-103c-4f51-b75d-a74d620f20a7" testId="135d9a16-0f3d-d98b-b384-52f48469a9fc" testName="EM5_OP4Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.1477117" startTime="2022-12-04T12:13:35.1689451+02:00" endTime="2022-12-04T12:13:35.9033013+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb495d06-103c-4f51-b75d-a74d620f20a7">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM5_OP4Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM5_OP4()
+   at unit_tests.LogicTest.EM5_OP4Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 338
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0433e9e4-60ff-4e0d-8874-993583ba7eaf" testId="190cf5ac-e335-12c6-e286-0a62f070242d" testName="EM5_OP1Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0018304" startTime="2022-12-04T12:13:35.9189259+02:00" endTime="2022-12-04T12:13:35.9345505+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0433e9e4-60ff-4e0d-8874-993583ba7eaf">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM5_OP1Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM5_OP1()
+   at unit_tests.LogicTest.EM5_OP1Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 299
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="26a2def6-4b78-4b37-b0df-f4ea3f230af4" testId="1a7e60df-ef55-c1eb-d5bd-cd063bbbe14f" testName="impregnationTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0012138" startTime="2022-12-04T12:13:35.9345505+02:00" endTime="2022-12-04T12:13:35.9345505+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26a2def6-4b78-4b37-b0df-f4ea3f230af4">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.impregnationTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.impregnation(Int32 i_time)
+   at unit_tests.LogicTest.impregnationTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 448
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a000c46c-f016-4838-a2ca-13e88ef8f7d2" testId="225e5f49-9319-5e20-15eb-71e980b61aa7" testName="EM4_OP2Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0012138" startTime="2022-12-04T12:13:35.9345505+02:00" endTime="2022-12-04T12:13:35.9501751+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a000c46c-f016-4838-a2ca-13e88ef8f7d2">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM4_OP2Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM4_OP2()
+   at unit_tests.LogicTest.EM4_OP2Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 286
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="706dd381-2f9b-43a0-82b4-33e1bbd24e65" testId="2484c15f-a6bd-8fdd-62e9-34805d7138ee" testName="EM2_OP2Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0010895" startTime="2022-12-04T12:13:35.9501751+02:00" endTime="2022-12-04T12:13:35.9501751+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="706dd381-2f9b-43a0-82b4-33e1bbd24e65">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM2_OP2Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM2_OP2()
+   at unit_tests.LogicTest.EM2_OP2Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 156
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1e609d24-0c56-410b-8b63-985b3cbe69b6" testId="2a434934-e4d9-ee0e-6c3a-4a8422942f18" testName="EM3_OP8Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0010314" startTime="2022-12-04T12:13:35.9501751+02:00" endTime="2022-12-04T12:13:35.9501751+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e609d24-0c56-410b-8b63-985b3cbe69b6">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP8Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP8()
+   at unit_tests.LogicTest.EM3_OP8Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 260
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2103f846-8969-4b61-af16-00551c3ba4bb" testId="2b60809d-3b40-e06e-d783-13daba8a50e4" testName="U1_OP4Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0033769" startTime="2022-12-04T12:13:35.9657997+02:00" endTime="2022-12-04T12:13:35.9814243+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2103f846-8969-4b61-af16-00551c3ba4bb">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.U1_OP4Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.U1_OP4()
+   at unit_tests.LogicTest.U1_OP4Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 392
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="943c00e5-2780-4a97-adf9-4d7a86bc8c58" testId="2c0e89c9-79c6-22bb-d773-0a395390dc69" testName="EM3_OP1Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0029833" startTime="2022-12-04T12:13:35.9814243+02:00" endTime="2022-12-04T12:13:35.9970489+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="943c00e5-2780-4a97-adf9-4d7a86bc8c58">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP1Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP1()
+   at unit_tests.LogicTest.EM3_OP1Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4cc82c13-7ff6-4a6e-8488-6a7006ea3e18" testId="381a9000-13f7-0ac0-d1c9-a793b91f09b2" testName="update_PI300_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.5710421" startTime="2022-12-04T12:13:35.9970489+02:00" endTime="2022-12-04T12:13:36.5751591+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cc82c13-7ff6-4a6e-8488-6a7006ea3e18">
+    </UnitTestResult>
+    <UnitTestResult executionId="c37493aa-bd59-40c0-a6ae-8f7526401a5a" testId="3a2a0858-23be-19a9-e854-c9b2440ca5c8" testName="EM1_OP1Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0023449" startTime="2022-12-04T12:13:36.5907837+02:00" endTime="2022-12-04T12:13:36.5907837+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c37493aa-bd59-40c0-a6ae-8f7526401a5a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM1_OP1Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM1_OP1()
+   at unit_tests.LogicTest.EM1_OP1Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 91
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f895097e-2594-4110-a958-02e1e2e8ade6" testId="3a3a04c0-beba-61c0-9596-37ab028e966a" testName="EM3_OP2Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0052892" startTime="2022-12-04T12:13:36.5907837+02:00" endTime="2022-12-04T12:13:36.6064083+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f895097e-2594-4110-a958-02e1e2e8ade6">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP2Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP2()
+   at unit_tests.LogicTest.EM3_OP2Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 182
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="97e5ae1b-d871-4b48-9db5-541be80982a8" testId="3af9a9c8-a438-6bbb-13f1-fb9fafc29ac8" testName="EM3_OP3Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0059230" startTime="2022-12-04T12:13:36.6064083+02:00" endTime="2022-12-04T12:13:36.6064083+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97e5ae1b-d871-4b48-9db5-541be80982a8">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP3Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP3()
+   at unit_tests.LogicTest.EM3_OP3Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 195
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="70bb510d-2c69-4cd4-845e-dd63931ad7ba" testId="3bd0d5a0-e9de-ce8f-b3c1-a6babb01f328" testName="change_sequence_statusTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0205735" startTime="2022-12-04T12:13:36.6064083+02:00" endTime="2022-12-04T12:13:36.6376575+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70bb510d-2c69-4cd4-845e-dd63931ad7ba">
+    </UnitTestResult>
+    <UnitTestResult executionId="97f27dc4-7e02-4c97-929b-d2738acddb20" testId="3e7645e8-799a-a23a-c556-4a27cd05317d" testName="EM4_OP1Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0012177" startTime="2022-12-04T12:13:36.6376575+02:00" endTime="2022-12-04T12:13:36.6376575+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97f27dc4-7e02-4c97-929b-d2738acddb20">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM4_OP1Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM4_OP1()
+   at unit_tests.LogicTest.EM4_OP1Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 273
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9088ce25-536b-4d7f-b917-94460c460beb" testId="43a78f4d-84b5-1406-8c7b-f0ff9b22a81c" testName="EM3_OP4Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0011886" startTime="2022-12-04T12:13:36.6376575+02:00" endTime="2022-12-04T12:13:36.6532821+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9088ce25-536b-4d7f-b917-94460c460beb">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP4Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP4()
+   at unit_tests.LogicTest.EM3_OP4Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 208
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2362c183-90cc-4264-b3c9-6024b6a98f97" testId="4651fef4-be07-f97e-dc5f-1f879df387d5" testName="cookingTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0011928" startTime="2022-12-04T12:13:36.6532821+02:00" endTime="2022-12-04T12:13:36.6532821+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2362c183-90cc-4264-b3c9-6024b6a98f97">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.cookingTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.cooking(Double time, Int32 pressure, Double temp)
+   at unit_tests.LogicTest.cookingTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 421
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="22b79fac-5d7b-410b-b4a0-da6dc7856592" testId="50910027-bca4-5b3b-853c-152508de3f8e" testName="temperature_controlTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0038574" startTime="2022-12-04T12:13:36.6532821+02:00" endTime="2022-12-04T12:13:36.6689067+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22b79fac-5d7b-410b-b4a0-da6dc7856592">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at unit_tests.ControlTest.temperature_controlTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\ControlTest.cs:line 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4ec35f1c-3b33-425c-8dbd-b0c0141b5243" testId="559cae99-0cdf-f67f-04b4-de1bd78272f9" testName="white_liquor_fillTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0013216" startTime="2022-12-04T12:13:36.6689067+02:00" endTime="2022-12-04T12:13:36.6689067+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ec35f1c-3b33-425c-8dbd-b0c0141b5243">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.white_liquor_fillTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.white_liquor_fill()
+   at unit_tests.LogicTest.white_liquor_fillTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 512
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a3980326-40b9-4733-8e51-c2d792dfa646" testId="5b3ff60e-a583-2f5a-8951-53d06aaafd2c" testName="ConnectOpcUaConstructorTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0231546" startTime="2022-12-04T12:13:36.6689067+02:00" endTime="2022-12-04T12:13:36.7001559+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3980326-40b9-4733-8e51-c2d792dfa646">
+    </UnitTestResult>
+    <UnitTestResult executionId="f5e6fda8-678c-4781-b985-33c1cdcedfab" testId="5de9d446-578b-4360-59f1-81fd6aedfe6f" testName="processTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0021815" startTime="2022-12-04T12:13:36.7157805+02:00" endTime="2022-12-04T12:13:36.7157805+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5e6fda8-678c-4781-b985-33c1cdcedfab">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.processTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.process(Int32 i_time, Double c_time, Int32 c_pressure, Int32 c_temp)
+   at unit_tests.LogicTest.processTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 465
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="907d668a-7c17-490d-843c-1f4911dc7fed" testId="64299ba7-01b4-3852-ddb4-66fb1ddd418c" testName="shutdown_processTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0062801" startTime="2022-12-04T12:13:36.7157805+02:00" endTime="2022-12-04T12:13:36.7314051+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="907d668a-7c17-490d-843c-1f4911dc7fed">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.shutdown_processTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at gui_app.Logic.shutdown_process() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\gui-app\logic.cs:line 46
+   at unit_tests.LogicTest.shutdown_processTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 480
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9c80e743-520f-4897-8175-69532998508b" testId="6bd171df-c382-1558-2c7e-89b53efa35aa" testName="check_input_valTest" computerName="SYSTEEMILUOKKA" duration="00:00:06.3366930" startTime="2022-12-04T12:13:36.7314051+02:00" endTime="2022-12-04T12:13:43.0593681+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c80e743-520f-4897-8175-69532998508b">
+    </UnitTestResult>
+    <UnitTestResult executionId="f639ed05-ee67-4316-acd0-61ce3003c795" testId="6e367d9c-9993-1d41-1249-e61835bc3870" testName="update_LS300m_statusTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0297674" startTime="2022-12-04T12:13:43.0749927+02:00" endTime="2022-12-04T12:13:43.1062419+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f639ed05-ee67-4316-acd0-61ce3003c795">
+    </UnitTestResult>
+    <UnitTestResult executionId="752ff271-73ba-4575-a978-82b0f0656d24" testId="6f3c8267-44fd-9dd6-1aef-bc93eeb2c1a4" testName="dischargeTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0028833" startTime="2022-12-04T12:13:43.1062419+02:00" endTime="2022-12-04T12:13:43.1062419+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="752ff271-73ba-4575-a978-82b0f0656d24">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.dischargeTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.discharge()
+   at unit_tests.LogicTest.dischargeTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 434
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3b7b820-5779-4121-b760-ed130d3ef5cf" testId="77c302de-377d-d7ab-6e04-e3852b7ea1a4" testName="ControlConstructorTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0052230" startTime="2022-12-04T12:13:43.1218665+02:00" endTime="2022-12-04T12:13:43.1218665+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3b7b820-5779-4121-b760-ed130d3ef5cf">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at unit_tests.ControlTest.ControlConstructorTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\ControlTest.cs:line 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7fb771f0-701e-4ae0-9b17-183654873d33" testId="79603908-6c58-f867-d926-813208ddb12d" testName="update_pump_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0186660" startTime="2022-12-04T12:13:43.1218665+02:00" endTime="2022-12-04T12:13:43.1531157+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fb771f0-701e-4ae0-9b17-183654873d33">
+    </UnitTestResult>
+    <UnitTestResult executionId="866a791d-09fa-4d02-92c2-5a36c258a15a" testId="7b0b0322-03c5-bfa5-6884-8a7285deb251" testName="invoke_E100_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.1133392" startTime="2022-12-04T12:13:43.1531157+02:00" endTime="2022-12-04T12:13:43.2624879+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="866a791d-09fa-4d02-92c2-5a36c258a15a">
+    </UnitTestResult>
+    <UnitTestResult executionId="d4286271-3ad2-4d4c-9a90-817f7294ce83" testId="7c41d6a4-800c-6ec6-101b-7d3d063f2709" testName="LogicConstructorTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0010512" startTime="2022-12-04T12:13:43.2624879+02:00" endTime="2022-12-04T12:13:43.2781125+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4286271-3ad2-4d4c-9a90-817f7294ce83">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at unit_tests.LogicTest.LogicConstructorTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d82f4712-6572-4a28-8b7c-5e43bb5dd335" testId="7dc9c9a3-ee2a-f9ea-cec2-1a8e8a2ba7ec" testName="toggle_valveTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0172943" startTime="2022-12-04T12:13:43.2781125+02:00" endTime="2022-12-04T12:13:43.2937371+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d82f4712-6572-4a28-8b7c-5e43bb5dd335">
+    </UnitTestResult>
+    <UnitTestResult executionId="0efc8f76-efe0-43b1-b0e4-eba022f7e32d" testId="8ac0dc75-b417-f8db-9da9-ddf97bd434a3" testName="update_pb_StatusTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0142819" startTime="2022-12-04T12:13:43.2937371+02:00" endTime="2022-12-04T12:13:43.3093617+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0efc8f76-efe0-43b1-b0e4-eba022f7e32d">
+    </UnitTestResult>
+    <UnitTestResult executionId="ab48d42f-2f20-494b-8eb1-dcf566c31d70" testId="907d3d6c-1c5d-7ea5-73ea-4d2a9b726439" testName="EM1_OP2Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0029140" startTime="2022-12-04T12:13:43.3093617+02:00" endTime="2022-12-04T12:13:43.3249863+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab48d42f-2f20-494b-8eb1-dcf566c31d70">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM1_OP2Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM1_OP2()
+   at unit_tests.LogicTest.EM1_OP2Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="49021f68-92e6-42bd-82de-09a6a0c03042" testId="93c0981d-b76c-243b-e565-a1e65a1d6057" testName="connectTest" computerName="SYSTEEMILUOKKA" duration="00:00:02.8657893" startTime="2022-12-04T12:13:43.3249863+02:00" endTime="2022-12-04T12:13:46.1999127+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49021f68-92e6-42bd-82de-09a6a0c03042">
+    </UnitTestResult>
+    <UnitTestResult executionId="3c06da16-3f4b-4107-9905-061ac7453f2b" testId="9a064fba-8260-d8f3-431c-da15e7436be3" testName="EM3_OP6Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0020882" startTime="2022-12-04T12:13:46.1999127+02:00" endTime="2022-12-04T12:13:46.1999127+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c06da16-3f4b-4107-9905-061ac7453f2b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP6Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP6()
+   at unit_tests.LogicTest.EM3_OP6Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 234
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cacf7fc3-823e-43a3-8bec-4b0854fbcd0c" testId="9babf3fc-a46b-9592-3a7e-6eb979254120" testName="EM5_OP2Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0029081" startTime="2022-12-04T12:13:46.2155373+02:00" endTime="2022-12-04T12:13:46.2311619+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cacf7fc3-823e-43a3-8bec-4b0854fbcd0c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM5_OP2Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM5_OP2()
+   at unit_tests.LogicTest.EM5_OP2Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 312
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b357ba05-915a-466d-a257-248802cb405a" testId="a44017f8-8b5c-5909-536d-3ebcc259f952" testName="check_cookign_input_valTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0296001" startTime="2022-12-04T12:13:46.2311619+02:00" endTime="2022-12-04T12:13:46.2624111+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b357ba05-915a-466d-a257-248802cb405a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </Message>
+          <StackTrace>   at unit_tests.MainWindowTest.check_cookign_input_valTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\MainWindowTest.cs:line 106
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3783c1a-d70e-42a7-b55b-4710baa8b782" testId="ae0eeb43-6e0e-a48d-851f-e4cd34a41346" testName="update_TI300_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0166685" startTime="2022-12-04T12:13:46.2780357+02:00" endTime="2022-12-04T12:13:46.2936603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3783c1a-d70e-42a7-b55b-4710baa8b782">
+    </UnitTestResult>
+    <UnitTestResult executionId="80090b6b-8757-40c3-97c0-0487d4a1dfd8" testId="b0805486-7606-6eff-4d14-e06f479655d8" testName="connection_offlineTest" computerName="SYSTEEMILUOKKA" duration="00:00:01.1391338" startTime="2022-12-04T12:13:46.2936603+02:00" endTime="2022-12-04T12:13:47.4342561+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80090b6b-8757-40c3-97c0-0487d4a1dfd8">
+    </UnitTestResult>
+    <UnitTestResult executionId="4f515420-bc5f-4cb6-bfe9-ae2c4980e518" testId="b42c3a56-667a-f33b-8392-5960b32e3f0c" testName="set_valve_controlTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0240854" startTime="2022-12-04T12:13:47.4498807+02:00" endTime="2022-12-04T12:13:47.4655053+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f515420-bc5f-4cb6-bfe9-ae2c4980e518">
+    </UnitTestResult>
+    <UnitTestResult executionId="bc2d96e7-5deb-4009-b4b8-3dec8eaae576" testId="b53aebfb-dd1b-29c6-5b46-5924eb5bd43c" testName="change_E100_valueTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0280197" startTime="2022-12-04T12:13:47.4811299+02:00" endTime="2022-12-04T12:13:47.5123791+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc2d96e7-5deb-4009-b4b8-3dec8eaae576">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa8df897-6ec4-4ed6-89af-f62fc371c1b1" testId="cb9f4255-bba2-0788-8d42-3f2275175fc3" testName="black_liquor_fillTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0056241" startTime="2022-12-04T12:13:47.5123791+02:00" endTime="2022-12-04T12:13:47.5280037+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa8df897-6ec4-4ed6-89af-f62fc371c1b1">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.black_liquor_fillTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.black_liquor_fill()
+   at unit_tests.LogicTest.black_liquor_fillTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 405
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ca54d5ca-2f82-47c9-a722-bb00e70b1223" testId="cc713445-75e4-3ddd-4f7b-4883675cea50" testName="U1_OP1Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0103295" startTime="2022-12-04T12:13:47.5280037+02:00" endTime="2022-12-04T12:13:47.5436283+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca54d5ca-2f82-47c9-a722-bb00e70b1223">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.U1_OP1Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.U1_OP1(Int32 pressure)
+   at unit_tests.LogicTest.U1_OP1Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 352
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7980af1b-a16e-4f31-8bfc-33ef5032eda4" testId="d4ecd901-031d-812e-030d-cfebb162feaf" testName="EM1_OP4Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0108840" startTime="2022-12-04T12:13:47.5436283+02:00" endTime="2022-12-04T12:13:47.5592529+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7980af1b-a16e-4f31-8bfc-33ef5032eda4">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM1_OP4Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM1_OP4()
+   at unit_tests.LogicTest.EM1_OP4Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 130
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b79928a0-c708-40bf-9927-be2d2e1518d1" testId="db685ce1-79d9-c78e-3954-604e7dc5158c" testName="pressure_controlTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0144040" startTime="2022-12-04T12:13:47.5592529+02:00" endTime="2022-12-04T12:13:47.5748775+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b79928a0-c708-40bf-9927-be2d2e1518d1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at unit_tests.ControlTest.pressure_controlTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\ControlTest.cs:line 95
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="42a6a2e9-aa61-4d40-8c5b-3f6fd5570b04" testId="e38ccfdc-9ab4-5eb0-e269-506394bd6b60" testName="EM3_OP7Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0033744" startTime="2022-12-04T12:13:47.5905021+02:00" endTime="2022-12-04T12:13:47.6061267+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42a6a2e9-aa61-4d40-8c5b-3f6fd5570b04">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP7Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP7()
+   at unit_tests.LogicTest.EM3_OP7Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 247
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="34f51271-3a5e-45c0-9278-b3eac47b532c" testId="e816d77c-2af0-f1c2-1dd2-1855f060da00" testName="EM2_OP1Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0114291" startTime="2022-12-04T12:13:47.6061267+02:00" endTime="2022-12-04T12:13:47.6217513+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34f51271-3a5e-45c0-9278-b3eac47b532c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM2_OP1Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM2_OP1()
+   at unit_tests.LogicTest.EM2_OP1Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 143
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5f845e41-b0b4-44e8-aad7-f37971758e07" testId="ee154a8a-177f-5471-fe8f-a19abf8c0f12" testName="EM3_OP5Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0026224" startTime="2022-12-04T12:13:47.6217513+02:00" endTime="2022-12-04T12:13:47.6530005+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f845e41-b0b4-44e8-aad7-f37971758e07">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM3_OP5Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM3_OP5()
+   at unit_tests.LogicTest.EM3_OP5Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 221
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a34c6787-2f4b-4178-bd99-e634e890d832" testId="f2f954a3-de37-203c-ccb1-5cdb67e52f8c" testName="start_processTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0065312" startTime="2022-12-04T12:13:47.6530005+02:00" endTime="2022-12-04T12:13:47.6686251+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a34c6787-2f4b-4178-bd99-e634e890d832">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at unit_tests.LogicTest.start_processTest() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 500
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="37511d19-54f2-431e-a92c-39de0c75defc" testId="f3a6c914-560d-1140-6f85-f88e70cddb6a" testName="EM1_OP3Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0121481" startTime="2022-12-04T12:13:47.6686251+02:00" endTime="2022-12-04T12:13:47.6842497+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37511d19-54f2-431e-a92c-39de0c75defc">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM1_OP3Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM1_OP3()
+   at unit_tests.LogicTest.EM1_OP3Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 117
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c926afb1-ca81-4ed3-ab85-a646bf5b6bec" testId="f4718b36-646b-2b11-f5c9-9a9c0bf1492a" testName="connection_onlineTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.1356284" startTime="2022-12-04T12:13:47.6842497+02:00" endTime="2022-12-04T12:13:47.8404957+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c926afb1-ca81-4ed3-ab85-a646bf5b6bec">
+    </UnitTestResult>
+    <UnitTestResult executionId="2ec0bce3-1b72-493d-8ddd-4aa950bc605e" testId="f64d7652-46e8-b802-ee98-974f95eac67c" testName="U1_OP2Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0023097" startTime="2022-12-04T12:13:47.8404957+02:00" endTime="2022-12-04T12:13:47.8404957+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ec0bce3-1b72-493d-8ddd-4aa950bc605e">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.U1_OP2Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.U1_OP2(Double temperature)
+   at unit_tests.LogicTest.U1_OP2Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 366
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c4817db7-2840-4fcc-aab3-297b387bd754" testId="fc457851-7569-0712-7c1c-5d9d65262068" testName="DisposeTest" computerName="SYSTEEMILUOKKA" duration="00:00:00.0938124" startTime="2022-12-04T12:13:47.8404957+02:00" endTime="2022-12-04T12:13:47.9342433+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4817db7-2840-4fcc-aab3-297b387bd754">
+    </UnitTestResult>
+    <UnitTestResult executionId="a6f65480-cd65-483c-918b-4c1c6eb9ecc0" testId="fd2ef5ec-5e5e-6304-613d-dc2abffd59c9" testName="U1_OP3Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0019823" startTime="2022-12-04T12:13:47.9342433+02:00" endTime="2022-12-04T12:13:47.9498679+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6f65480-cd65-483c-918b-4c1c6eb9ecc0">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.U1_OP3Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.U1_OP3()
+   at unit_tests.LogicTest.U1_OP3Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 379
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7a10a304-abb8-461a-9828-dbd15815a0b3" testId="fe678de6-d5ee-6074-95a2-83dfbf899f4b" testName="EM5_OP3Test" computerName="SYSTEEMILUOKKA" duration="00:00:00.0022167" startTime="2022-12-04T12:13:47.9498679+02:00" endTime="2022-12-04T12:13:47.9654925+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a10a304-abb8-461a-9828-dbd15815a0b3">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method unit_tests.LogicTest.EM5_OP3Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at gui_app.Logic_Accessor.EM5_OP3()
+   at unit_tests.LogicTest.EM5_OP3Test() in C:\Documents and Settings\Jari Huilla\My Documents\exercise\gui-app\unit_tests\unit_tests\LogicTest.cs:line 325
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>gui-app</name>
+    </assembly>
+    <members>
+        <member name="T:gui_app.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:gui_app.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:gui_app.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:gui_app.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:gui_app.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:gui_app.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:gui_app.ConnectOpcUa">
+            <summary>
+            API to connect to the simulator and handling the events.
+            </summary>
+        </member>
+        <member name="F:gui_app.ConnectOpcUa.process_logic">
+            <summary>
+            Create process logic object
+            </summary>
+        </member>
+        <member name="M:gui_app.ConnectOpcUa.#ctor(gui_app.MainWindow)">
+            <summary>
+            Process connect class constructor
+            </summary>
+            <param name="ui">Mainwindow user interface</param>
+        </member>
+        <member name="M:gui_app.ConnectOpcUa.connect(System.String)">
+            <summary>
+            Connects the application to the simulator and its intsruments.
+            </summary>
+            <param name="sim_url">Url address to the simulator API</param>
+        </member>
+        <member name="M:gui_app.ConnectOpcUa.Dispose">
+            <summary>
+            Dispose the opc ua client connection and set the gui to show connection offline.
+            </summary>
+        </member>
+        <member name="T:gui_app.Logic">
+            <summary>
+            MVC models Control logic. Is responsible for controlling actuators and the process.
+            </summary>
+        </member>
+        <member name="M:gui_app.Logic.#ctor(gui_app.MainWindow,Tuni.MppOpcUaClientLib.MppClient,gui_app.ConnectOpcUa,System.Object)">
+            <summary>
+            Logic class constructor
+            </summary>
+            <param name="ui">User interface object</param>
+            <param name="client">mppc client object</param>
+            <param name="connection">Connection class obect</param>
+            <param name="lock_object">Lock object</param>
+        </member>
+        <member name="M:gui_app.Logic.shutdown_process">
+            <summary>
+            Method to shut down all actuators
+            </summary>
+        </member>
+        <member name="M:gui_app.Logic.start_process(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Start the process sequence with using Task to run multiple threads
+            </summary>
+            <param name="i_time">Impreganation time in minutes</param>
+            <param name="c_time">Cooking time in minutes</param>
+            <param name="c_pressure">Cooking pressure in hPa</param>
+            <param name="c_temp">Cooking temperature in Celsius</param>
+        </member>
+        <member name="T:gui_app.Control">
+            <summary>
+            Class to control the cooking temperature and pressure using E100 heater and V104 valve.
+            </summary>
+        </member>
+        <member name="M:gui_app.Control.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Control class constructor.
+            </summary>
+            <param name="hold_time">Discrete time system sample time</param>
+            <param name="pressure_setpoint">User entered pressure value for the cooking process.</param>
+            <param name="temperature_setpoint">User entered temperature value for the cooking process.</param>
+        </member>
+        <member name="M:gui_app.Control.pressure_control(System.Double)">
+            <summary>
+            Control the process pressure.
+            </summary>
+            <param name="measured_pressure">Measured pressure.</param>
+            <returns>Valve control value</returns>
+        </member>
+        <member name="M:gui_app.Control.temperature_control(System.Double)">
+            <summary>
+            COntrol cooking temperature.
+            </summary>
+            <param name="measured_temperature">Measured cooking temperature.</param>
+            <returns>Heater on off value</returns>
+        </member>
+        <member name="T:gui_app.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:gui_app.MainWindow.#ctor">
+            <summary>
+            Mainwindow constructor.
+            </summary>
+        </member>
+        <member name="M:gui_app.MainWindow.connection_offline">
+            <summary>
+            Visualizes the connection lost to the ui.
+            </summary>
+        </member>
+        <member name="M:gui_app.MainWindow.connection_online">
+            <summary>
+            Visualizes the connection online to the ui.
+            </summary>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_PI300_value(System.String)">
+            <summary>
+            Invokes mainwindow to show PI300 value from another thread. 
+            </summary>
+            <param name="value">New PI300 value from simulation</param>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_E100_value(System.Boolean)">
+            <summary>
+            Invokes mainwindow to show E100 value from another thread. 
+            </summary>
+            <param name="value">New E100 value</param>
+        </member>
+        <member name="M:gui_app.MainWindow.trigger_warning">
+            <summary>
+            Shows warning to user with messagebox of LA+100 sensor triggered.
+            </summary>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_progress_bars(System.String,System.Int32)">
+            <summary>
+            Invokes mainwindow to show progressbar values from another thread. 
+            </summary>
+            <param name="bar">Name of the progressbar</param>
+            <param name="value">New value of the bar</param>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_LI300_plus_status(System.Boolean)">
+            <summary>
+            Invokes mainwindow to show LI100 value from another thread. 
+            </summary>
+            <param name="status">New LI100 value from simulator</param>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_LS300_minus_status(System.Boolean)">
+            <summary>
+            Invokes mainwindow to show LS300-minus value from another thread. 
+            </summary>
+            <param name="status">New LS300-minus value from simulator</param>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_pumps(System.String,System.String)">
+            <summary>
+            Invokes mainwindow to show pumps value from another thread. 
+            </summary>
+            <param name="pump">Name of the pump</param>
+            <param name="value">New pump value</param>
+        </member>
+        <member name="M:gui_app.MainWindow.change_TI100_value(System.String)">
+            <summary>
+            Invokes mainwindow to show T100 value from another thread. 
+            </summary>
+            <param name="value">New TI100 value from simulator</param>
+        </member>
+        <member name="M:gui_app.MainWindow.change_TI300_value(System.String)">
+            <summary>
+            Invokes mainwindow to show TI300 value from another thread. 
+            </summary>
+            <param name="value">New TI300 value from simulator</param>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_valve_control(System.String,System.String)">
+            <summary>
+            Invokes mainwindow to show valve value from another thread. 
+            </summary>
+            <param name="valve">Name of the valve</param>
+            <param name="value">New valve value from simulator</param>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_sequence_status(System.String)">
+            <summary>
+            Invokes mainwindow to show what sequence is currently on going from another thread. 
+            </summary>
+            <param name="sequence">Name of the sequence</param>
+        </member>
+        <member name="M:gui_app.MainWindow.invoke_valve_onoff(System.String,System.Boolean)">
+            <summary>
+            Invokes mainwindow to show valve on off value from another thread. 
+            </summary>
+            <param name="valve">Name of the value</param>
+            <param name="value">New value of the valve from simulator</param>
+        </member>
+        <member name="M:gui_app.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
