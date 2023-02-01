@@ -8,6 +8,8 @@ const fs = require('fs')
 
 let buildings = require('./data/building.json');
 let sensors = require('./data/sensors.json');
+const { response } = require('express');
+const { request } = require('http');
 
 
 const AddEndpointRulesBuilding = {
@@ -139,7 +141,14 @@ app.get('/sensor/building/:id', (request, response) => {
     return response.status(200).json(sensor)
 });
 
-
+app.get('/sensor/state/:state', (request, response) => {
+    let state = request.params.state;
+    let sensor = sensors.filter(sensor => sensor.state == state);
+    if (Object.keys(sensor).length === 0) {
+        sensor = "There are no sensors with the requested state."
+    }
+    return response.status(200).json(sensor);
+});
 
 
 // Start server
