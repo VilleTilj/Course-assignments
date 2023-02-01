@@ -20,6 +20,7 @@ const AddEndpointRulesBuilding = {
 
 const AddEndpointRulesSensor = {
     id: 'id',
+    building_id: 'building_id',
     name: 'name',
     value: 'value',
     state: 'state',
@@ -126,6 +127,20 @@ app.put('/sensor', (request, response) => {
     }
     return response.status(400).send();
 });
+
+
+// API methods to retrieve sensors 
+app.get('/sensor/building/:id', (request, response) => {
+    let building_id = request.params.id;
+    let sensor = sensors.filter(sensor => sensor.building_id == building_id);
+    if (Object.keys(sensor).length === 0) {
+        sensor = "There are no sensors in the requested building.";
+    }
+    return response.status(200).json(sensor)
+});
+
+
+
 
 // Start server
 const server = app.listen(port, () => {
