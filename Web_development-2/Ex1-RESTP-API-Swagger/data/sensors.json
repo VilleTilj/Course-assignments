@@ -1,12 +1,1 @@
-[
-    {
-        "id": "1",
-        "name": "temperature_sensor",
-        "value": 24,
-        "state": {
-            "online": "false",
-            "offline": "true",
-            "error": "false" 
-        }
-    }
-]
+[{"id":"1","name":"temperature_sensor","value":24,"state":"online"},{"id":2,"name":"sensor put test","value":15,"state":"offline"},{"id":3,"name":"sensor put test","value":15,"stlate":"offline"},{"id":4,"name":"sensor put test","value":15,"state":"offline"}]

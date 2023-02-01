@@ -10,7 +10,7 @@ let buildings = require('./data/building.json');
 let sensors = require('./data/sensors.json');
 
 
-const AddEndpointRules = {
+const AddEndpointRulesBuilding = {
     id: 'id',
     name: 'name',
     address: 'address',
@@ -18,10 +18,18 @@ const AddEndpointRules = {
     post_number: "post_number"
 }
 
+const AddEndpointRulesSensor = {
+    id: 'id',
+    name: 'name',
+    value: 'value',
+    state: 'state',
+}
 
 function matches(body, rules, type) {
     var keys = Object.keys(body);
-    var innerKeys = Object.keys(body['address']);
+    if (type == "building") {
+        var innerKeys = Object.keys(body['address']);
+    }
     let i = 0;
     let j = 0;
     // Loop through building JSON format rules
@@ -32,7 +40,7 @@ function matches(body, rules, type) {
             }
             j += 1;
         }
-        else if (i <= 2 && keys[i] !== rules[attribute]) {
+        else if ((i <= 2 ||type == "sensor") && keys[i] !== rules[attribute]) {
             return false;
         }
         i += 1;
@@ -67,7 +75,7 @@ app.get('/buildings/:id', (request, response) => {
 
 app.post('/buildings', (request, response) => {
     let newBuilding = request.body; // Assume that the body contains json object
-    if (!matches(newBuilding, AddEndpointRules, "building" )) {
+    if (!matches(newBuilding, AddEndpointRulesBuilding, "building" )) {
         console.log("Request body is invalid")
         response.status(400).send()
     } else {
@@ -85,17 +93,38 @@ app.patch('/buildings/:id', (request, response) => {
         let updatedBuilding = request.body;
         if (Object.keys(updatedBuilding).length === 0) {
             console.log('Json content missing')
-            response.status(400).send();
-            return
-        } else if (!matches(updatedBuilding, AddEndpointRules, "building" )) {
+            
+        } else if (!matches(updatedBuilding, AddEndpointRulesBuilding, "building" )) {
             console.log("Request body is invalid")
-            response.status(400).send()
+            
         } else {
             buildings[id] = updatedBuilding;
             write_json(buildings, 'building')
+            return response.status(204).send();
         }
-        response.status(204).send();
+        return response.status(400).send();
     } 
+});
+
+
+// API methods for sensor model
+app.put('/sensor', (request, response) => {
+    let newSensor = request.body;
+    console.log("test",newSensor)
+    if (Object.keys(newSensor).length === 0) {
+        console.log('Json content missing')
+    }
+    else if ( !matches(newSensor, AddEndpointRulesSensor, 'sensor')) {
+        console.log("Request body is invalid");
+        
+    } else {
+        console.log(newSensor);
+        newSensor.id = sensors.length + 1;
+        sensors.push(newSensor);
+        write_json(sensors, 'sensors');
+        return response.status(201).json(newSensor);
+    }
+    return response.status(400).send();
 });
 
 // Start server
