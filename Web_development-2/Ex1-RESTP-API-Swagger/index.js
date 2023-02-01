@@ -42,6 +42,14 @@ function matches(body, rules, type) {
 }
 
 
+function write_json(json, file) {
+    fs.writeFile(`./data/${file}.json`, JSON.stringify(json), 'utf-8',  function(err) {
+        if (err) throw err;
+        console.log('complete');
+        }
+    );
+}
+
 // Building API methods
 app.get('/buildings', (request, response) => {
     response.status(200).json(buildings)
@@ -49,7 +57,7 @@ app.get('/buildings', (request, response) => {
 
 app.get('/buildings/:id', (request, response) => {
     let id = request.params.id;
-    let building = buildings.filter(building => building.id === id);
+    let building = buildings.filter(building => building.id == id);
     if ( building.length !== 0) {
         response.status(200).json(building)
     } else {
@@ -65,15 +73,29 @@ app.post('/buildings', (request, response) => {
     } else {
         console.log(newBuilding)
         newBuilding.id = buildings.length + 1;
-        // TODO add also to the file
         buildings.push(newBuilding)
-        fs.writeFile('./data/building.json', JSON.stringify(buildings), 'utf-8',  function(err) {
-            if (err) throw err;
-            console.log('complete');
-            }
-        );
+        write_json(buildings, 'building')
         response.status(201).json(newBuilding)
     }
+});
+
+app.patch('/buildings/:id', (request, response) => {
+    let id = request.params.id;
+    if (buildings[id]) {
+        let updatedBuilding = request.body;
+        if (Object.keys(updatedBuilding).length === 0) {
+            console.log('Json content missing')
+            response.status(400).send();
+            return
+        } else if (!matches(updatedBuilding, AddEndpointRules, "building" )) {
+            console.log("Request body is invalid")
+            response.status(400).send()
+        } else {
+            buildings[id] = updatedBuilding;
+            write_json(buildings, 'building')
+        }
+        response.status(204).send();
+    } 
 });
 
 // Start server
