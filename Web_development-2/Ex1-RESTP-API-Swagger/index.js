@@ -8,8 +8,7 @@ const fs = require('fs')
 
 let buildings = require('./data/building.json');
 let sensors = require('./data/sensors.json');
-const { response } = require('express');
-const { request } = require('http');
+
 
 
 const AddEndpointRulesBuilding = {

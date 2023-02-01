@@ -1,0 +1,211 @@
+openapi: '3.0.2'
+info:
+  title: Assignment 1, RESTful API with Swagger
+  description:  |-
+    This is a COMP.CS.510-2022-2023Web Development 2 cource Assignment 1. OpenAPI 3.0 specification.
+    In the assignment the task was to implement API for building a sensor network in different buildings.
+    The main foal is to learn OpenAPI Swagger 2.0 design and specify documentation. 
+
+    API requirements: 
+    Two models
+    - Building 
+      - id: a unique string
+      - name: string
+      - address: an object with two properties:
+        - Street address: string
+        - Post Number: integer
+    - Sensor 
+      - id: unique string
+      - name: string
+      - value: number
+      - state: enum (posssible values: "online", "offline", "error")
+
+    This document has been made using OpenAPI (Swagger) editor VS-code plugin. 
+
+    Source code for the API can be found from my github.  
+    - [RESTful API source](https://github.com/VilleTilj/Course-assignments/tree/main/Web_development-2/Ex1-RESTP-API-Swagger)
+  version: '1.0'
+  contact:
+    email: ville.tiljander@tuni.fi
+    name: ville.tiljander@tuni.fi
+
+servers:
+  - url: https://localhost:8000
+
+tags:
+  - name: buildings
+    description: Building model methods
+  - name: sensors
+    description: Sensor model methods
+
+paths:
+  /buildings:
+    get: 
+      tags:
+        - buildings
+      summary: Get all buildings
+      description: Receive all buildings found from the database.
+      operationId: buildings
+      responses: 
+       '200':
+          description: Successful operation
+    post:
+      tags:
+        - "buildings"
+      summary: Add a new Building
+      description: Add a new Building
+      operationId: add_building
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                address:
+                  type: object
+                  properties:
+                    street_address: 
+                      type: string
+                    post_number:
+                      type: number
+
+                    
+              example:   # Sample object
+                id: 1
+                name: Sähkötalo
+                address: 
+                  street_address: Korkeakoulunkatu 7
+                  post_number: 33720
+
+      responses: 
+        '201':
+         description: Add a new Building
+        '400':
+          description: Request body invalid
+    
+  /buildings/{id}:
+    get:
+      tags:
+        - buildings
+      summary: Fetch a Building with a specific Building ID
+      description: Fetch a Building with a specific Building ID
+      operationId: building_id
+      parameters:
+        - name: id
+          in: path
+          description: ID of Building to return
+          schema: 
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+        '404':
+          description: Building not found
+   
+    patch:
+      tags:
+        - buildings
+      summary: Update Buildings with a specific Building ID
+      description: Update Buildings with a specific Building ID
+      operationId: patch_building
+      parameters:
+        - name: id
+          in: path
+          description: ID of Building to uodate
+          schema: 
+            type: string
+          required: true
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                address:
+                  type: object
+                  properties:
+                    street_address: 
+                      type: string
+                    post_number:
+                      type: number
+
+                    
+              example:   # Sample object
+                id: 1
+                name: Sähkötalo
+                address: 
+                  street_address: Korkeakoulunkatu 7
+                  post_number: 33720
+      responses:
+        '200':
+          description: Successful operation
+        '400':
+          description: JSON content missing or invalid
+  
+  /sensor:
+    put:
+      tags:
+        - sensors
+      summary: Add a new sensor to Sensors model
+      description: Add a new sensor to Sensors model
+      operationId: sensor_patch
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                building_id:
+                  type: string
+                name:
+                  type: string
+                value:
+                  type: integer
+                state: 
+                  type: string
+
+                    
+              example:   # Sample object
+                id: 1
+                building_id: 1
+                name: Temperature sensor PT100
+                value: 20 
+                state: online
+                  
+      responses:
+
+        '201':
+          description: Successful operation
+        '400':
+          description: JSON content missing or invalid
+  /sensor/{id}:
+    delete:
+      tags:
+        - sensors
+      summary: Delete sensor from Sensors model
+      description: Delete sensor from Sensors model
+      operationId: sensor_delete
+      parameters:
+        - name: id
+          in: path
+          description: ID of sensor to delete
+          schema: 
+            type: string
+          required: true
+      responses:
+        '204':
+          description: Successful operation
+        '404':
+          description: Sensor not found
